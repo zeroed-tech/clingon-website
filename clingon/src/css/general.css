@@ -1,0 +1,32 @@
+.active {
+    background-color: blue;
+    border-bottom: solid white 5px;
+    color: white;
+
+}
+.pictureFormat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+.productLimitSize {
+    max-height: 300px;
+
+}
+.find-local-retailer-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+h2 {
+    text-align: center;
+}
+button {
+    background-color: rgba(2, 51, 32, 0.897);
+    border: 0px solid;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 2rem;
+}

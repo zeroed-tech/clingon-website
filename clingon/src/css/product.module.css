@@ -1,0 +1,10 @@
+.productButtons {
+    background-color: white;
+    color: grey;
+    border: solid 1px grey;
+    border-radius: 5px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

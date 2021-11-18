@@ -1,0 +1,54 @@
+
+.navigationBar .menuItem {
+    width: auto;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    color: white;
+    clear: both;
+    margin: 2% 0 2% 0;
+    padding: 2% 1% 2% 1%;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.navigationBar .menuItem:hover {
+    background-color: blue;
+    border-bottom: solid white 5px;
+    color: white;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.active {
+    background-color: red;
+    display: none;
+}
+.navBarWrapper {
+    position: relative;
+    background-color: rgba(2, 2, 2, 0.4);
+    width:  100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.navigationBar {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+.footerBackground {
+    background-color: rgba(2, 2, 2, 0.4);
+    border-top: solid black 1px;
+    margin-top: 5%;
+
+}
+
+@keyframes fade {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+    100% {
+        background-color: blue;
+    }
+}
