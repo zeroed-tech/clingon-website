@@ -3,13 +3,14 @@ import styles from '../../css/home.module.css'
 import globalStyles from '../../Assets/global-styles/bootstrap.min.module.css'
 import cx from 'classnames'
 import '../../css/general.css'
+import SideBar from '../SideBar'
 
 export default function Home() {
     return (
 
         <div className="container">
             <div className='row'>
-                <div className='col-8'>
+                <div className='col-8 col-left'>
                     <h1>CLING ON!</h1><hr />
                     <img className='pictureFormat' src='https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/s03fb617b319ccf37/image/ied80071d26fb1637/version/1623612311/image.jpg' />
                     <hr />
@@ -17,11 +18,11 @@ export default function Home() {
                     <hr />
                     <h1>ABOUT CLING ON!</h1>
                     <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-6 col-left'>
                         <hr />
                         <img src='https://image.jimcdn.com/app/cms/image/transf/dimension=313x10000:format=jpg/path/s03fb617b319ccf37/image/ic4f14c787fb4c7c4/version/1603516035/image.jpg' />
                     </div>
-                    <div className='col-6'>
+                    <div className='col-6 col-right'>
                         <hr  />
                         <p><b>CLING ON!</b> is the youngest paintbrush in The Netherlands, yet filled with decades of experience.</p>
                         <p><b>Designed,</b> not by marketeers in a suit, but by a Dutch painter, actually on the job on a daily basis, knowing what a paintbrush should do and what it should feel like.</p>
@@ -31,9 +32,8 @@ export default function Home() {
                     </div>
                     </div>
                 </div>
-                <div className='col-4'>
-                    <img id='cling-on-logo' src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03fb617b319ccf37/image/i10044046994cb0c0/version/1603516634/image.jpg' />
-
+                <div className='col-4 col-right'>
+                    <SideBar />
                 </div>
 
             </div>

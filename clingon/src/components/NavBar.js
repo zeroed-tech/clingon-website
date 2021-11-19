@@ -27,7 +27,7 @@ export default function NavigationBar() {
       <>
         <div className={cx(styles.navBarWrapper)}>
           <nav className={cx(globalStyles.navbar, styles.navigationBar)}>
-            <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/'><b>HOME</b></NavLink>
+            <NavLink exact className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/'><b>HOME</b></NavLink>
             <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/products'><b>PRODUCTS</b></NavLink>
             <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/find-a-retailer'><b>FIND A RETAILER</b></NavLink>
             <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/become-a-retailer'><b>BECOME A RETAILER</b></NavLink>
@@ -49,6 +49,11 @@ export default function NavigationBar() {
 
 
         </Switch>
+        <footer className="bg-light text-center text-lg-start">
+        <div className={cx(globalStyles['text-center'], globalStyles['p-3'], styles.footerBackground)}>
+          © 2020 Copyright: DJ
+        </div>
+      </footer>
 </>
 
     )

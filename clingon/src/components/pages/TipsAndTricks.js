@@ -8,6 +8,7 @@ import {
     NavLink
 } from "react-router-dom";
 import '../../css/general.css'
+import SideBar from '../SideBar';
 export default function TipsAndTricks() {
 
     return (
@@ -31,7 +32,7 @@ export default function TipsAndTricks() {
                     <img className='pictureFormat' src='https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/s03fb617b319ccf37/image/i896538a07ca7b6ef/version/1605032517/image.jpg' />
                 </div>
                 <div className='col-4'>
-                    <img className='pictureFormat' src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03fb617b319ccf37/image/i10044046994cb0c0/version/1603516634/image.jpg' />
+                    <SideBar />
                 </div>
             </div>
         </div>

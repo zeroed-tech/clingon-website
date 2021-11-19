@@ -1,5 +1,10 @@
+.App {
+    background-image: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s03fb617b319ccf37/backgroundarea/i43d30a346a0e75d0/version/1603433921/image.jpg%22');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 .active {
-    background-color: blue;
+    background-color: rgba(66,129,143,255);
     border-bottom: solid white 5px;
     color: white;
 
@@ -23,10 +28,16 @@
 h2 {
     text-align: center;
 }
-button {
-    background-color: rgba(2, 51, 32, 0.897);
-    border: 0px solid;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 2rem;
+#tips-and-tricks {
+    background-color: rgba(66,129,143,255);
+    width: 100%;
+    margin-top: 10%;
 }
+.col-left {
+    margin-top: 5%;
+    background-color: white;
+}
+.col-right {
+    margin-top: 5%;
+}
+
