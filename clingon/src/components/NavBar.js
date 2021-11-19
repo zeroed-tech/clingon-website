@@ -1,11 +1,12 @@
 import React from 'react'
-import Product from './Product'
-import BecomeRetailer from './BecomeRetailer'
-import Contact from './Contact'
-import FindRetailer from './FindRetailer'
+import Product from './pages/Product'
+import WhyOurCustomersLoveContainer from './WhyOurCustomersLoveContainer'
+import BecomeRetailer from './pages/BecomeRetailer'
+import Contact from './pages/Contact'
+import FindRetailer from './pages/FindRetailer'
 import ProductContainer from './ProductContainer'
-import WhyCustomersLoveClingOn from './Love'
-import Home from './Home'
+import WhyCustomersLoveClingOn from './pages/Love'
+import Home from './pages/Home'
 
 import {
     BrowserRouter as Router,
@@ -40,7 +41,7 @@ export default function NavigationBar() {
           <Route path={'/contact'} ><Contact /></Route>
           <Route path={'/become-a-retailer'}><BecomeRetailer /></Route>
           <Route path={'/find-a-retailer'}><FindRetailer /></Route>
-          <Route path={'/why-customers-love-cling-on'} ><WhyCustomersLoveClingOn /></Route>
+          <Route path={'/why-customers-love-cling-on'} ><WhyOurCustomersLoveContainer /></Route>
           <Route path={'/products'}> <ProductContainer/> </Route>
           
           

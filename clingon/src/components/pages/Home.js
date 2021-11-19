@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../css/home.module.css'
-import globalStyles from '../Assets/global-styles/bootstrap.min.module.css'
+import styles from '../../css/home.module.css'
+import globalStyles from '../../Assets/global-styles/bootstrap.min.module.css'
 import cx from 'classnames'
-import '../css/general.css'
+import '../../css/general.css'
 
 export default function Home() {
     return (

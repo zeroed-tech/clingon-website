@@ -1,5 +1,12 @@
 import React from 'react'
-
+import {
+    BrowserRouter as Router,
+    Redirect,
+    Switch,
+    Route,
+    Link,
+    NavLink
+} from "react-router-dom";
 
 export default function WhyCustomersLoveClingOn() {
     return (
@@ -15,7 +22,9 @@ export default function WhyCustomersLoveClingOn() {
                 </div>
                 <div className='col-4'>
                     <img src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03fb617b319ccf37/image/i10044046994cb0c0/version/1603516634/image.jpg' />
-                    <button>Tips & Tricks</button>
+                    <NavLink to='/why-customers-love-cling-on/tips-and-tricks'>
+                        <button>Tips & Tricks</button>
+                    </NavLink>
                 </div>
             </div>
         </div>

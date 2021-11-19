@@ -1,6 +1,6 @@
 import React from 'react'
-import Product from './Product'
-import Home from './Home'
+import Product from './pages/Product'
+import Home from './pages/Home'
 import {products} from '../Assets/data'
 import {
     BrowserRouter as Router,

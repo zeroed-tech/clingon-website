@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../css/general.css'
+import '../../css/general.css'
 export default function FindRetailer() {
     return (
         <div className='container'>

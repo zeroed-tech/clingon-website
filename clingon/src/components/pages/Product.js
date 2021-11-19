@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import styles from '../css/product.module.css'
-import globalStyles from '../Assets/global-styles/bootstrap.min.module.css'
-import Home from './Home'
+import styles from '../../css/product.module.css'
+import globalStyles from '../../Assets/global-styles/bootstrap.min.module.css'
 
 import cx from 'classnames'
 import {

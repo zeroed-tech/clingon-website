@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import NavigationBar from './components/NavBar'
 import styles from './css/appstyle.module.css'
-import Home from './components/Home'
+import Home from './components/pages/Home'
 import globalStyles from '../src/Assets/global-styles/bootstrap.min.module.css'
 import cx from 'classnames'
 import general from './css/general.css'
