@@ -11,10 +11,14 @@ import {
     NavLink
 } from "react-router-dom";
 import BrushDisplay from './BrushDisplay';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 export default function ProductContainer() {
     
     return (
-        <div className='container'>
+        <Container>
                 <Switch>
                     <Route path='/products/round-brushes'><BrushDisplay brush={products.roundBrushes}/></Route>
                     <Route path='/products/shorties'><BrushDisplay brush={products.shorties}/></Route>
@@ -27,6 +31,6 @@ export default function ProductContainer() {
                 </Switch>
 
 
-        </div>
+        </Container>
     )
 }

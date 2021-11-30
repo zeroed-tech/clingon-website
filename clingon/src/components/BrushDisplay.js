@@ -2,35 +2,39 @@ import React from 'react'
 import styles from '../css/brushDisplay.module.css'
 import '../css/general.css'
 import SideBar from './SideBar'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 export default function BrushDisplay({brush, textAlignment = 'left'}) {
     return (
-        <div className='container'>
-            <div className='row'>
+        <Container>
+            <Row>
 
-                <div className='col-8 col-left'>
+            <Col lg={{span: 9}} md={{ span: 12 }} className='col-left'>
                     {brush.title}
                     <hr/>
                     <p>{brush.description}</p>
                     <hr/>
-                    <div className='row'>
-                        <div className='col-6 col-left'>
+                    <Row>
+                        <Col className='col-left'>
                             {textAlignment == 'left' && <p className={styles.brushWriteUp}>{brush.writeUp}</p>}
                             {textAlignment == 'right' && <img src={brush.image} />}
-                        </div>
-                        <div className='col-6 col-left'>
+                        </Col>
+                        <Col className='col-left'>
                             {textAlignment == 'right' && <p className={styles.brushWriteUp}>{brush.writeUp}</p>}
                             {textAlignment == 'left' && <img src={brush.image} />}
 
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
 
-                </div>
-                <div className='col-4 col-right'>
+                </Col>
+                <Col lg={{ order: 'last' }} xs={{ order: 'first' }} className='col-right'>
                     <SideBar />
-                </div>
+                </Col>
 
-            </div>
+            </Row>
 
-        </div>
+        </Container>
     )
 }

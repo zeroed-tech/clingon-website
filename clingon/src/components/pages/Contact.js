@@ -4,6 +4,9 @@ import Button from 'react-bootstrap/Button'
 import SideBar from '../SideBar'
 import '../../css/general.css'
 import '../../css/contact.module.css'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 export default function Contact() {
     let [formObject, setFormObject] = useState({})
 
@@ -18,9 +21,9 @@ export default function Contact() {
         })
     }
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col-8 col-left'>
+        <Container>
+            <Row>
+            <Col lg={{span: 9}} md={{ span: 12 }} className='col-left'>
                     <h1>CONTACT US!</h1>
                     <hr />
                     <Form>
@@ -54,24 +57,22 @@ export default function Contact() {
 
                     <p><b>Note:</b> Please fill out the fields marked with an asterisk.</p>
                     <hr />
-                    <div className='row'>
-                        <div className='col-6 col-left'>
-                            <img className='pictureFormat' src='https://image.jimcdn.com/app/cms/image/transf/dimension=10000x313:format=jpg:rotate=270/path/s03fb617b319ccf37/image/i6aabbac84d75ea5f/version/1603611770/image.jpg' />
+                    <Row>
+                        <Col className='col-left'>
+                            <img className='pictureFormat sizeFix' src='https://image.jimcdn.com/app/cms/image/transf/dimension=10000x313:format=jpg:rotate=270/path/s03fb617b319ccf37/image/i6aabbac84d75ea5f/version/1603611770/image.jpg' />
 
-                        </div>
-                        <div className='col-6 col-right'>
+                        </Col>
+                        <Col className='col-right'>
                             <h4><b>Frank Michielsen, Director</b></h4>
                             <p><br />Address: <br />Office / Warehouse <br />Poortweg 19 <br />4613 BW Bergen op Zoom <br />The Netherlands <br />  <br />Phone: 0031 - 164 - 258 955 <br />Mob: 00316 - 54 73 80 67 <br />  <br />Reg. Nr 75506270 <br />VAT Number: NL8603.06.380.B01 <br />  <br />Email: fm@clingon.nl</p>
-                        </div>
+                        </Col>
 
-                    </div>
+                    </Row>
 
-                </div>
-                <div className='col-4 col-right'>
+                </Col>
                     <SideBar />
-                </div>
-            </div>
+            </Row>
 
-        </div>
+        </Container>
     )
 }

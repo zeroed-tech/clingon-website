@@ -9,12 +9,16 @@ import {
 } from "react-router-dom";
 import '../../css/general.css'
 import SideBar from '../SideBar';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 export default function TipsAndTricks() {
 
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col-8'>
+        <Container>
+            <Row>
+            <Col lg={{span: 9}} md={{ span: 12 }} className='col-left'>
                     <h1>TIPS & TRICKS!</h1>
                     <hr />
                     <p><b>K</b>eep string intact on round and oval styles. They are designed to preserve brush shape and are durable enough to withstand brush cleaning.</p>
@@ -29,12 +33,12 @@ export default function TipsAndTricks() {
                     <hr />
                     <p><b>A</b> Cling On! is that supple that it allows you to apply the recommended thickness without any effort. You don’t necessarily need a roller anymore to paint doors for example: <br />Use enough paint and work swiftly, and just use the tips of the brush to achieve a smooth and even finish.</p>
                     <hr />
-                    <img className='pictureFormat' src='https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/s03fb617b319ccf37/image/i896538a07ca7b6ef/version/1605032517/image.jpg' />
-                </div>
-                <div className='col-4'>
+                    <img className='pictureFormat sizeFix' src='https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/s03fb617b319ccf37/image/i896538a07ca7b6ef/version/1605032517/image.jpg' />
+                </Col>
+                <Col className='col-right'>
                     <SideBar />
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
     )
 }

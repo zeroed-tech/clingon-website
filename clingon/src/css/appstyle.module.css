@@ -7,7 +7,7 @@
     position: relative;
     color: white;
     clear: both;
-    margin: 2% 0 2% 0;
+    margin: 2% -1% 2% -1%;
     padding: 2% 1% 2% 1%;
     justify-content: center;
     white-space: nowrap;
@@ -22,10 +22,6 @@
     animation-duration: 1s;
 }
 
-.active {
-    background-color: red;
-    display: none;
-}
 .navBarWrapper {
     position: relative;
     background-color: rgba(2, 2, 2, 0.4);
@@ -34,9 +30,12 @@
     border-bottom: 1px solid black;
 }
 .navigationBar {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.burgerMenu {
+    display: none;
 }
 .footerBackground {
     background-color: rgba(2, 2, 2, 0.4);
@@ -51,5 +50,13 @@
     }
     100% {
         background-color: rgba(66,129,143,255);
+    }
+}
+@media (max-width: 1270px) {
+    .navigationBar {
+        display: none;
+    }
+    .burgerMenu {
+        display: inline;
     }
 }

@@ -1,6 +1,14 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 .App {
     background-image: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s03fb617b319ccf37/backgroundarea/i43d30a346a0e75d0/version/1603433921/image.jpg%22');
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 .active {
@@ -13,8 +21,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
 }
+.sizeFix {
+    max-width: 100%;
+
+}
+
 .productLimitSize {
     max-height: 300px;
 
@@ -32,7 +44,7 @@ h2 {
     background-color: rgba(66,129,143,255);
     width: 100%;
     margin-top: 10%;
-}
+    }
 .col-left {
     margin-top: 5%;
     background-color: white;
