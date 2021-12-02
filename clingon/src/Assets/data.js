@@ -38,3 +38,132 @@ export var products = {
         image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=377x1024:format=jpg/path/s03fb617b319ccf37/image/i7db280554b5cdab0/version/1608705335/image.jpg'
     }
 }
+
+export var store_products = [
+    {
+        name: 'R12',
+        price: 13.40,
+        RRP: 23.00,
+        id: 0
+    },
+    {
+        name: 'R14',
+        price: 14.30,
+        RRP: 25.00,
+        id: 1
+    },
+    {
+        name: 'R16',
+        price: 15.90,
+        RRP: 27.00,
+        id: 2
+    },
+    {
+        name: 'R18',
+        price: 17.50,
+        RRP: 28.00,
+        id: 3
+    },
+    {
+        name: 'R20',
+        price: 18.70,
+        RRP: 30.00,
+        id: 4
+    },
+    {
+        name: 'F30',
+        price: 12.40,
+        RRP: 22.00,
+        id: 5
+    },
+    {
+        name: 'F40',
+        price: 14.60,
+        RRP: 27.00,
+        id: 6
+    },
+    {
+        name: 'F50',
+        price: 17.00,
+        RRP: 30.00,
+        id: 7
+    },
+    {
+        name: 'O35',
+        price: 17.00,
+        RRP: 28.00,
+        id: 8
+    },
+    {
+        name: 'O40',
+        price: 19.10,
+        RRP: 30.00,
+        id: 9
+    },
+    {
+        name: 'O45',
+        price: 22.00,
+        RRP: 34.00,
+        id: 10
+    },
+    {
+        name: 'S30',
+        price: 19.80,
+        RRP: 32.00,
+        id: 11
+    },
+    {
+        name: 'S50',
+        price: 23.10,
+        RRP: 38.00,
+        id: 12
+    },
+    {
+        name: 'P16',
+        price: 9.70,
+        RRP: 16.00,
+        id: 13
+    },
+    {
+        name: 'P20',
+        price: 10.90,
+        RRP: 19.00,
+        id: 14
+    },
+    {
+        name: 'P24',
+        price: 12.10,
+        RRP: 21.00,
+        id: 15
+    },
+    {
+        name: 'B10',
+        price: 32.00,
+        RRP: 44.00,
+        id: 16
+    },
+    {
+        name: 'B12',
+        price: 36.00,
+        RRP: 47.00,
+        id: 17
+    },
+    {
+        name: 'Madeline Medium Wax',
+        price: 25.00,
+        RRP: 39.00,
+        id: 18
+    },
+    {
+        name: 'Madeline Mini Flat Wax',
+        price: 20.91,
+        RRP: 33.00,
+        id: 19
+    },
+    {
+        name: 'Madeline Mini Rounded Wax',
+        price: 20.91,
+        RRP: 33.00,
+        id: 20
+    }
+]

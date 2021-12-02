@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import FindRetailer from './pages/FindRetailer'
 import ProductContainer from './ProductContainer'
 import WhyCustomersLoveClingOn from './pages/Love'
+import Store from './pages/Store'
 import Home from './pages/Home'
 import { stack as Menu } from 'react-burger-menu'
 import {
@@ -60,6 +61,7 @@ export default function NavigationBar() {
         <Route path={'/find-a-retailer'}><FindRetailer /></Route>
         <Route path={'/why-customers-love-cling-on'} ><WhyOurCustomersLoveContainer /></Route>
         <Route path={'/products'}> <ProductContainer /> </Route>
+        <Route path={'/store'}> <Store /> </Route>
 
 
 

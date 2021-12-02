@@ -52,4 +52,9 @@ h2 {
 .col-right {
     margin-top: 5%;
 }
-
+.order-item {
+    text-align: left;
+}
+.order-item-price {
+    text-align: right;
+}
