@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Product from './pages/Product'
+import Login from './pages/Login'
 import WhyOurCustomersLoveContainer from './WhyOurCustomersLoveContainer'
 import BecomeRetailer from './pages/BecomeRetailer'
 import Contact from './pages/Contact'
@@ -62,6 +63,7 @@ export default function NavigationBar() {
         <Route path={'/why-customers-love-cling-on'} ><WhyOurCustomersLoveContainer /></Route>
         <Route path={'/products'}> <ProductContainer /> </Route>
         <Route path={'/store'}> <Store /> </Route>
+        <Route path={'/login'}> <Login /> </Route>
 
 
 
@@ -70,7 +72,9 @@ export default function NavigationBar() {
       </Switch>
       <footer className="bg-light text-center text-lg-start">
         <div className={cx(globalStyles['text-center'], globalStyles['p-3'], styles.footerBackground)}>
-          © 2020 Copyright: DJ
+          © {new Date().getFullYear()} Copyright: DJ
+        <NavLink style={{float: 'right', textDecoration: 'none'}} to='/login'>login</NavLink>
+
         </div>
       </footer>
     </>

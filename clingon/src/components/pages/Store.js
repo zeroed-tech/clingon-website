@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { store_products } from '../../Assets/data'
+// import { store_products } from '../../Assets/data'
 import StoreProductDisplay from '../StoreProductDisplay'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -9,6 +9,7 @@ import Cart from '../Cart'
 export default function Store() {
     let [order, setOrder] = useState([])
     let [orderSubtotal, setOrderSubtotal] = useState(0)
+    let [stockData, setStockData] = useState([])
 
     let reducer = () => {
         let num = 0
@@ -50,13 +51,23 @@ export default function Store() {
         
         return order
     }
+    let getStock = () => {
+        fetch('http://clingonaustralia.com.au/stock')
+        .then(resp => resp.json())
+        .then(data => setStockData(data))
+        .catch(err => console.error(err))
+    }
+    useEffect(() => {
+        getStock()
+    })
     
     return (
         <Container>
             <Row>
                 <Col lg={{ span: 8 }}>
-                    {store_products.map((product) => {
-                        return <StoreProductDisplay id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} removeDuplicates={removeDuplicates} updateOrder={updateOrder} />
+                    {stockData.map((product) => {
+                        // id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} removeDuplicates={removeDuplicates} updateOrder={updateOrder} 
+                        return <StoreProductDisplay data={stockData} updateOrder={updateOrder}/>
                     })}
                 </Col>
                 <Col lg={{ span: 4 }} style={{ backgroundColor: 'white' }}>
