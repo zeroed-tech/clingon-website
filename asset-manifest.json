@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/clingon-website/static/css/main.66a4b1e1.chunk.css",
-    "main.js": "/clingon-website/static/js/main.200ce2b7.chunk.js",
-    "main.js.map": "/clingon-website/static/js/main.200ce2b7.chunk.js.map",
+    "main.css": "/clingon-website/static/css/main.e819737e.chunk.css",
+    "main.js": "/clingon-website/static/js/main.deed99ae.chunk.js",
+    "main.js.map": "/clingon-website/static/js/main.deed99ae.chunk.js.map",
     "runtime-main.js": "/clingon-website/static/js/runtime-main.755a1307.js",
     "runtime-main.js.map": "/clingon-website/static/js/runtime-main.755a1307.js.map",
-    "static/js/2.d6fcd476.chunk.js": "/clingon-website/static/js/2.d6fcd476.chunk.js",
-    "static/js/2.d6fcd476.chunk.js.map": "/clingon-website/static/js/2.d6fcd476.chunk.js.map",
+    "static/js/2.b30e3d32.chunk.js": "/clingon-website/static/js/2.b30e3d32.chunk.js",
+    "static/js/2.b30e3d32.chunk.js.map": "/clingon-website/static/js/2.b30e3d32.chunk.js.map",
     "index.html": "/clingon-website/index.html",
-    "static/css/main.66a4b1e1.chunk.css.map": "/clingon-website/static/css/main.66a4b1e1.chunk.css.map",
-    "static/js/2.d6fcd476.chunk.js.LICENSE.txt": "/clingon-website/static/js/2.d6fcd476.chunk.js.LICENSE.txt"
+    "static/css/main.e819737e.chunk.css.map": "/clingon-website/static/css/main.e819737e.chunk.css.map",
+    "static/js/2.b30e3d32.chunk.js.LICENSE.txt": "/clingon-website/static/js/2.b30e3d32.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.755a1307.js",
-    "static/js/2.d6fcd476.chunk.js",
-    "static/css/main.66a4b1e1.chunk.css",
-    "static/js/main.200ce2b7.chunk.js"
+    "static/js/2.b30e3d32.chunk.js",
+    "static/css/main.e819737e.chunk.css",
+    "static/js/main.deed99ae.chunk.js"
   ]
 }
