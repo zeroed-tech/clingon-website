@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-// import { store_products } from '../../Assets/data'
+import { store_products } from '../../Assets/data'
 import StoreProductDisplay from '../StoreProductDisplay'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -11,24 +11,24 @@ export default function Store() {
     let [orderSubtotal, setOrderSubtotal] = useState(0)
     let [stockData, setStockData] = useState([])
 
-    let reducer = () => {
+    let subtotal = () => {
         let num = 0
         if (order.length > 0) {
 
-        
-        order.forEach(each => {
-            num += (each.price * each.amount)
-        })
-        setOrderSubtotal(num.toFixed(2))
-    } else {
-        setOrderSubtotal(0)
-    }
+
+            order.forEach(each => {
+                num += (each.price * each.amount)
+            })
+            setOrderSubtotal(num.toFixed(2))
+        } else {
+            setOrderSubtotal(0)
+        }
     }
     let updateOrder = (newItem) => {
 
         order = removeDuplicates(newItem)
-        reducer()
-        
+        subtotal()
+
         setOrder(order)
 
     }
@@ -41,37 +41,37 @@ export default function Store() {
                         return order[index] = objectToInsert
 
                     } else {
-                       return order.splice(index, 1)
+                        return order.splice(index, 1)
                     }
                 }
             })
         } else {
             order.push(objectToInsert)
         }
-        
+
         return order
     }
     let getStock = () => {
         fetch('http://clingonaustralia.com.au/stock')
-        .then(resp => resp.json())
-        .then(data => setStockData(data))
-        .catch(err => console.error(err))
+            .then(resp => resp.json())
+            .then(data => setStockData(data))
+            .catch(err => console.error(err))
     }
     useEffect(() => {
         getStock()
     })
-    
+
     return (
         <Container>
             <Row>
                 <Col lg={{ span: 8 }}>
-                    {stockData.map((product) => {
-                        // id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} removeDuplicates={removeDuplicates} updateOrder={updateOrder} 
-                        return <StoreProductDisplay data={stockData} updateOrder={updateOrder}/>
+                    {store_products.map((product) => {
+                        return <StoreProductDisplay key={product["id"]} id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} updateOrder={updateOrder} />
+                        // return <StoreProductDisplay data={stockData} updateOrder={updateOrder}/>
                     })}
                 </Col>
                 <Col lg={{ span: 4 }} style={{ backgroundColor: 'white' }}>
-                    <Cart orderedItems={order} orderSubtotal={orderSubtotal}/>
+                    <Cart orderedItems={order} orderSubtotal={orderSubtotal} />
                 </Col>
 
             </Row>

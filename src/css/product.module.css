@@ -1,10 +1,42 @@
 .productButtons {
-    background-color: white;
+    background-color: #42808E;
     color: grey;
     border: solid 1px grey;
     border-radius: 5px;
-    width: 40%;
+    width: 50%;
+    font-size: 1.3rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    color: #FFFFFF;
+    border: none;
+}
+.productButtons:hover {
+    background-color: #74A4B1;
+}
+.list {
+    margin: 10% 0 0 -2%;
+    
+
+}
+.listItem {
+    background-color: #42808E;
+    list-style: none;
+    padding: 0 0 0 5%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    border-bottom: 1px solid #74A4B1;
+}
+.listItem:hover {
+    background-color: #74A4B1;
+    color: #FFFFFF;
+}
+
+.top {
+border-radius: 5px 5px 0 0;
+}
+.last {
+border-radius: 0 0 5px 5px;
+border-bottom: 0px;
+
 }

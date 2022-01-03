@@ -9,6 +9,7 @@ import {
     NavLink
 } from "react-router-dom";
 import SideBar from '../SideBar';
+import GreenBar from '../GreenBar'
 import '../../css/general.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -28,6 +29,7 @@ export default function WhyCustomersLoveClingOn() {
                 </Col>
                 <Col className='col-right'>
                     <SideBar />
+                    <GreenBar />
                     <NavLink to='/why-customers-love-cling-on/tips-and-tricks'>
                         <Button id='tips-and-tricks'>Tips & Tricks</Button>
                     </NavLink>

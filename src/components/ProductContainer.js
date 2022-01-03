@@ -20,12 +20,14 @@ export default function ProductContainer() {
     return (
         <Container>
                 <Switch>
-                    <Route path='/products/round-brushes'><BrushDisplay brush={products.roundBrushes}/></Route>
                     <Route path='/products/shorties'><BrushDisplay brush={products.shorties}/></Route>
                     <Route path='/products/flat-brushes'><BrushDisplay brush={products.flatBrushes} textAlignment={'right'}/></Route>
-                    <Route path='/products/oval-brushes'><BrushDisplay brush={products.ovalBrushes} /></Route>
+                    <Route path='/products/round-brushes'><BrushDisplay brush={products.roundBrushes}/></Route>
+                    <Route path='/products/oval-brushes'><BrushDisplay brush={products.ovalBrushes} textAlignment={'right'}/></Route>
                     <Route path='/products/angled-brushes'><BrushDisplay brush={products.angledBrushes} /></Route>
-                    <Route path='/products/block-brushes'><BrushDisplay brush={products.blockBrushes} /></Route>
+                    <Route path='/products/block-brushes'><BrushDisplay brush={products.blockBrushes} textAlignment={'right'}/></Route>
+                    <Route path='/products/shorties'><BrushDisplay brush={products.shorties}/></Route>
+
 
                     <Route path='/products'><Product /></Route>
                 </Switch>

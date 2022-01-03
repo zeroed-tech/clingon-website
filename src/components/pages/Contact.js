@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import SideBar from '../SideBar'
+import GreenBar from '../GreenBar'
 import '../../css/general.css'
 import '../../css/contact.module.css'
 import Container from 'react-bootstrap/Container'
@@ -23,7 +24,7 @@ export default function Contact() {
     return (
         <Container>
             <Row>
-            <Col lg={{span: 9}} md={{ span: 12 }} className='col-left'>
+                <Col lg={{ span: 9 }} md={{ span: 12 }} className='col-left'>
                     <h1>CONTACT US!</h1>
                     <hr />
                     <Form>
@@ -48,7 +49,7 @@ export default function Contact() {
                             <Form.Label>Message <span style={{ color: 'red' }}>*</span></Form.Label>
                             <Form.Control name='message' onChange={(e) => handleChange(e.target.name, e.target.value)} as='textarea' />
                         </Form.Group>
-                        <Button variant='primary' type='submit' onClick={(e) =>{
+                        <Button variant='primary' type='submit' onClick={(e) => {
                             e.preventDefault()
                             handleSubmit()
                         }}>Submit</Button>
@@ -63,14 +64,17 @@ export default function Contact() {
 
                         </Col>
                         <Col className='col-right'>
-                            <h4><b>Frank Michielsen, Director</b></h4>
-                            <p><br />Address: <br />Office / Warehouse <br />Poortweg 19 <br />4613 BW Bergen op Zoom <br />The Netherlands <br />  <br />Phone: 0031 - 164 - 258 955 <br />Mob: 00316 - 54 73 80 67 <br />  <br />Reg. Nr 75506270 <br />VAT Number: NL8603.06.380.B01 <br />  <br />Email: fm@clingon.nl</p>
+                            <h4><b>Hayley Justice - Australian Distributor</b></h4>
+                            <p><br />Address: <br />PO Box 213, <br />Wonthaggi Victoria <br />3995<br />Phone: 0439 - 375 - 904<br />Email: clingonaustralia@gmail.com<br />ABN: 44331876608 <br />  </p>
                         </Col>
 
                     </Row>
 
                 </Col>
+                <Col lg={{ span: 3 }} className="col-right">
                     <SideBar />
+                    <GreenBar />
+                </Col>
             </Row>
 
         </Container>

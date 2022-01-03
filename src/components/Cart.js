@@ -18,7 +18,8 @@ export default function Cart({ orderedItems, orderSubtotal }) {
 
                 </div>
             })}
-            <p>Order Subtotal: ${orderSubtotal}</p>
+            <hr className='style-eight' />
+            <h4 id='sub-total'>Order Subtotal: ${orderSubtotal}</h4>
             <Button style={{float: 'right'}} variant='primary' onClick={handleSubmit}>Submit Order</Button>
         </div>
     )

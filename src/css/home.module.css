@@ -2,3 +2,9 @@ h1 {
     text-align: center;
     font-size: 3rem;
 }
+p {
+    text-align: left;  
+}
+.homePageDescriptions p {
+    text-align: left;
+}
