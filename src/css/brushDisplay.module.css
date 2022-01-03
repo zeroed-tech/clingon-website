@@ -4,3 +4,9 @@ p {
 .brushWriteUp p {
     text-align: left;
 }
+.right {
+    margin-left: 35%;
+}
+.left {
+    margin-left: 20%;
+}

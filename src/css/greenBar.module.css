@@ -1,0 +1,59 @@
+
+.imageContainer {
+    display: block;
+
+    margin: auto 0;
+}
+.image {
+    margin: 5%;
+    width: 100%;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.bigLetter {
+    font-size: 1.5rem;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 1em;
+    text-align: left;
+    padding: 10% 5% 5% 10%;
+
+}
+.greenBar {
+    margin-top: 10%;
+    width: 114%;
+    border-radius: 5px;
+    background-color: #5bccbf;
+}
+.Button {
+    background-color: #43818E;
+    border: none;
+    padding: 5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    color: #FFFFFF;
+    border-radius: 5px;
+
+}
+.Button:hover {
+    background-color: #7EACB5;
+}
+.hashtag {
+    color: pink;
+}
+@media (max-width: 991px) {
+    h2 {
+        text-align: center;
+    }
+    .greenBar {
+        width: 105%;
+    }
+}
