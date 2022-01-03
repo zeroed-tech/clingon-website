@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/clingon-website/static/css/main.e2f4f0cc.chunk.css",
-    "main.js": "/clingon-website/static/js/main.de9c2201.chunk.js",
-    "main.js.map": "/clingon-website/static/js/main.de9c2201.chunk.js.map",
+    "main.js": "/clingon-website/static/js/main.dedea9e3.chunk.js",
+    "main.js.map": "/clingon-website/static/js/main.dedea9e3.chunk.js.map",
     "runtime-main.js": "/clingon-website/static/js/runtime-main.755a1307.js",
     "runtime-main.js.map": "/clingon-website/static/js/runtime-main.755a1307.js.map",
     "static/js/2.feeb25be.chunk.js": "/clingon-website/static/js/2.feeb25be.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.755a1307.js",
     "static/js/2.feeb25be.chunk.js",
     "static/css/main.e2f4f0cc.chunk.css",
-    "static/js/main.de9c2201.chunk.js"
+    "static/js/main.dedea9e3.chunk.js"
   ]
 }
