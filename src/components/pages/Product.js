@@ -91,13 +91,13 @@ export default function Products() {
                 <Col lg={{ span: 3, order: 2 }} xs={{ span: 12, order: 2 }} className='col-right'>
                     <SideBar />
                     <ul className={styles.list}>
-                        <NavLink to='/products/shorties' ><li className={styles.listItem}><b>Shorties</b></li></NavLink>
+                        <NavLink to='/products/shorties' ><li className={`${styles.listItem} ${styles.top}`}><b>Shorties</b></li></NavLink>
                         <NavLink to='/products/flat-brushes' ><li className={styles.listItem}><b>Flat Brushes</b></li></NavLink>
-                        <NavLink to='/products/round-brushes/'><li className={`${styles.listItem} ${styles.top}`}><b>Round Brushes</b></li></NavLink>
+                        <NavLink to='/products/round-brushes/'><li className={styles.listItem}><b>Round Brushes</b></li></NavLink>
                         <NavLink to='/products/oval-brushes' ><li className={styles.listItem}><b>Oval Brushes</b></li></NavLink>
                         <NavLink to='/products/angled-brushes' ><li className={styles.listItem}><b>Angled Brushes</b></li></NavLink>
-                        <NavLink to='/products/block-brushes' ><li className={`${styles.listItem} ${styles.last}`}><b>Block Brushes</b></li></NavLink>
-                        <NavLink to='/products/shorties' ><li className={styles.listItem}><b>Shorties</b></li></NavLink>
+                        <NavLink to='/products/block-brushes' ><li className={styles.listItem}><b>Block Brushes</b></li></NavLink>
+                        <NavLink to='/products/shorties' ><li className={`${styles.listItem} ${styles.last}`}><b>Shorties</b></li></NavLink>
 
                     </ul>
                     <GreenBar />
