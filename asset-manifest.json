@@ -1,20 +1,37 @@
 {
   "files": {
-    "main.css": "/clingon-website/static/css/main.60417bed.chunk.css",
-    "main.js": "/clingon-website/static/js/main.bd7dab61.chunk.js",
-    "main.js.map": "/clingon-website/static/js/main.bd7dab61.chunk.js.map",
+    "main.css": "/clingon-website/static/css/main.ddeec468.chunk.css",
+    "main.js": "/clingon-website/static/js/main.b535fac4.chunk.js",
+    "main.js.map": "/clingon-website/static/js/main.b535fac4.chunk.js.map",
     "runtime-main.js": "/clingon-website/static/js/runtime-main.755a1307.js",
     "runtime-main.js.map": "/clingon-website/static/js/runtime-main.755a1307.js.map",
-    "static/js/2.feeb25be.chunk.js": "/clingon-website/static/js/2.feeb25be.chunk.js",
-    "static/js/2.feeb25be.chunk.js.map": "/clingon-website/static/js/2.feeb25be.chunk.js.map",
+    "static/js/2.7817bece.chunk.js": "/clingon-website/static/js/2.7817bece.chunk.js",
+    "static/js/2.7817bece.chunk.js.map": "/clingon-website/static/js/2.7817bece.chunk.js.map",
     "index.html": "/clingon-website/index.html",
-    "static/css/main.60417bed.chunk.css.map": "/clingon-website/static/css/main.60417bed.chunk.css.map",
-    "static/js/2.feeb25be.chunk.js.LICENSE.txt": "/clingon-website/static/js/2.feeb25be.chunk.js.LICENSE.txt"
+    "static/css/main.ddeec468.chunk.css.map": "/clingon-website/static/css/main.ddeec468.chunk.css.map",
+    "static/js/2.7817bece.chunk.js.LICENSE.txt": "/clingon-website/static/js/2.7817bece.chunk.js.LICENSE.txt",
+    "static/media/AngledLargeSized.b56cf2d8.jpg": "/clingon-website/static/media/AngledLargeSized.b56cf2d8.jpg",
+    "static/media/BlockLargeSized.e7869798.jpg": "/clingon-website/static/media/BlockLargeSized.e7869798.jpg",
+    "static/media/BlueBrushesSideBar.feb71d8f.jpg": "/clingon-website/static/media/BlueBrushesSideBar.feb71d8f.jpg",
+    "static/media/BrushCollageSideBar.da184e38.jpg": "/clingon-website/static/media/BrushCollageSideBar.da184e38.jpg",
+    "static/media/BrushInYellowBag.b3e384de.jpg": "/clingon-website/static/media/BrushInYellowBag.b3e384de.jpg",
+    "static/media/Cling-On-Fun-Graphic.5814e2a6.jpg": "/clingon-website/static/media/Cling-On-Fun-Graphic.5814e2a6.jpg",
+    "static/media/ClingOnLogo.de6baf28.jpg": "/clingon-website/static/media/ClingOnLogo.de6baf28.jpg",
+    "static/media/ContactPageImage.d078472d.jpg": "/clingon-website/static/media/ContactPageImage.d078472d.jpg",
+    "static/media/EST2010.21ffd038.png": "/clingon-website/static/media/EST2010.21ffd038.png",
+    "static/media/FlatsLarge.ef3fa254.jpg": "/clingon-website/static/media/FlatsLarge.ef3fa254.jpg",
+    "static/media/GreenBrush.66264a51.jpg": "/clingon-website/static/media/GreenBrush.66264a51.jpg",
+    "static/media/HomePageImage.b11422a2.jpg": "/clingon-website/static/media/HomePageImage.b11422a2.jpg",
+    "static/media/OvalsLargeSized.26d45a03.jpg": "/clingon-website/static/media/OvalsLargeSized.26d45a03.jpg",
+    "static/media/RoundsLargeSized.b52f257b.jpg": "/clingon-website/static/media/RoundsLargeSized.b52f257b.jpg",
+    "static/media/ShortiesLargeSized.ff30f3d1.jpg": "/clingon-website/static/media/ShortiesLargeSized.ff30f3d1.jpg",
+    "static/media/Tips&TricksPage.5a1f9927.jpg": "/clingon-website/static/media/Tips&TricksPage.5a1f9927.jpg",
+    "static/media/YellowPiano.aa611aa3.jpg": "/clingon-website/static/media/YellowPiano.aa611aa3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.755a1307.js",
-    "static/js/2.feeb25be.chunk.js",
-    "static/css/main.60417bed.chunk.css",
-    "static/js/main.bd7dab61.chunk.js"
+    "static/js/2.7817bece.chunk.js",
+    "static/css/main.ddeec468.chunk.css",
+    "static/js/main.b535fac4.chunk.js"
   ]
 }
