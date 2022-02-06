@@ -22,7 +22,7 @@ export default function FindRetailer() {
                     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NO5N6pIVCqxPOW1gAXnTC2_pAvi48wNQ&ehbc=2E312F" width="640" height="480"></iframe>
                     <hr />
                     <h3>We’d love you to follow us on Instagram! #clingonbrushesaustralia</h3>
-                    <p>MAKE SURE YOU TAG US, SO WE CAN SEE YOUR PROJECTS PAINTED WITH ONE OF OUR BRUSHES! WE <br />LOVE TO SHARE OUR CUSTOMERS WORK!</p>
+                    <p>MAKE SURE YOU TAG US, SO WE CAN SEE YOUR PROJECTS PAINTED WITH ONE OF OUR BRUSHES! <br />WE LOVE TO SHARE OUR CUSTOMERS WORK!</p>
                     <hr />
                 </Col>
                 <Col lg={{ span: 3}} className="col-right">

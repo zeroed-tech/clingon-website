@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../css/brushDisplay.module.css'
 import '../css/general.css'
+import styles from '../css/brushDisplay.module.css'
 import ProductContainer from './ProductContainer'
 import SideBar from './SideBar'
 import Container from 'react-bootstrap/Container'
@@ -15,16 +15,16 @@ export default function BrushDisplay({brush, textAlignment = 'left'}) {
             <Col lg={{span: 9}} md={{ span: 12 }} className='col-left'>
                     {brush.title}
                     <hr/>
-                    <p>{brush.description}</p>
+                    <p className={styles.description}>{brush.description}</p>
                     <hr/>
                     <Row>
-                        <Col className='col-left'>
+                        <Col lg={{span: 6}} className='col-left'>
                             {textAlignment == 'left' && <p className={`${styles.brushWriteUp} ${styles.left}`}>{brush.writeUp}</p>}
-                            {textAlignment == 'right' && <img src={brush.image} />}
+                            {textAlignment == 'right' && <img className={`${styles.brushDisplayImage} pictureFormat`} src={brush.image} />}
                         </Col>
-                        <Col className='col-left'>
+                        <Col lg={{span: 6}} className='col-left'>
                             {textAlignment == 'right' && <p className={`${styles.brushWriteUp} ${styles.right}`}>{brush.writeUp}</p>}
-                            {textAlignment == 'left' && <img src={brush.image} />}
+                            {textAlignment == 'left' && <img className={`${styles.brushDisplayImage} pictureFormat`} src={brush.image} />}
 
                         </Col>
                     </Row>

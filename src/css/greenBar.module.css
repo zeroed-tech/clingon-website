@@ -6,7 +6,7 @@
 }
 .image {
     margin: 5%;
-    width: 100%;
+    width: 90%;
     display: block;
     
     margin-left: auto;
@@ -22,9 +22,12 @@ a {
 h2 {
     color: #FFFFFF;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
     padding: 10% 5% 5% 10%;
 
+}
+.leftAlign {
+    text-align: left;
 }
 .greenBar {
     margin-top: 10%;
@@ -47,7 +50,7 @@ h2 {
     background-color: #7EACB5;
 }
 .hashtag {
-    color: pink;
+    color: #43818E;
 }
 @media (max-width: 991px) {
     h2 {
