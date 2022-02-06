@@ -5,8 +5,18 @@ p {
     text-align: left;
 }
 .right {
-    margin-left: 35%;
+    margin-left: 15%;
 }
 .left {
     margin-left: 20%;
+}
+.brushDisplayImage {
+    width: 75%;
+}
+#display-right {
+    display: none;
+}
+
+.col-left .description {
+    text-align: center;
 }

@@ -4,6 +4,9 @@ import styles from "../css/greenBar.module.css"
 import FacebookBTN from "../Assets/images/facebookBTN.png"
 import EmailBTN from "../Assets/images/emailBTN.png"
 import InstagramBTN from "../Assets/images/instagramBTN.png"
+import BlueBrushesSideBar from "../Assets/images/BlueBrushesSideBar.jpg"
+import BrushCollageSideBar from "../Assets/images/BrushCollageSideBar.jpg"
+
 import Button from 'react-bootstrap/esm/Button'
 import { Container, Col, Row } from 'react-bootstrap'
 
@@ -22,15 +25,15 @@ export default function GreenBar() {
                     <Col xs={12}>
                         <div className={styles.imageContainer}>
                             <Row>
-                                <Col lg={{ span: 4, offset:0 }} xs={{ span: 6, offset: 3 }}>
+                                <Col lg={{ span: 4, offset:0 }} xs={{ span: 4 }}>
                                     <a href="https://www.facebook.com/clingonaustralia"><img className={styles.image} src={FacebookBTN} alt="CLING ON! Facebook" /></a>
                                 </Col>
 
-                                <Col lg={{ span: 4, offset: 0 }} xs={{ span: 6, offset: 3 }}>
+                                <Col lg={{ span: 4, offset: 0 }} xs={{ span: 4 }}>
                                 <a href="mailto:clingonaustralia@gmail.com"><img className={styles.image} src={EmailBTN} alt="CLING ON! Email" /></a>
                                 </Col>
 
-                                <Col lg={{ span: 4, offset: 0 }} xs={{ span: 6, offset: 3 }}>
+                                <Col lg={{ span: 4, offset: 0 }} xs={{ span: 4 }}>
                                    <a href="https://www.instagram.com/clingonaustralia/"><img className={styles.image} src={InstagramBTN} alt="CLING ON! Instagram" /></a>
                                 </Col>
                             </Row>
@@ -45,11 +48,11 @@ export default function GreenBar() {
                 <Row>
                     <Col>
                         <h2>KEEP CALM AND PAINT ON!</h2>
-                        <img className={styles.image} src="https://image.jimcdn.com/app/cms/image/transf/dimension=221x10000:format=jpg/path/s03fb617b319ccf37/image/ia0dbfe6d95ef962d/version/1603612833/image.jpg" alt="Paint brushes" />
+                        <img className={styles.image} src={BlueBrushesSideBar} alt="Paint brushes" />
                         <h2>YOURS FOR YEARS... EXTREMELY DURABLE!</h2>
-                        <img className={styles.image} src="https://image.jimcdn.com/app/cms/image/transf/dimension=250x10000:format=jpg/path/s03fb617b319ccf37/image/ie3fb3861a08affab/version/1603615468/image.jpg" alt="Collage of CLING ON!'s" />
-                        <h2>USE <span className={styles.hashtag}>#clingonbrushesaustralia</span> ON YOUR INSTAGRAM! WE LOVE TO SEE YOUR WORK DONE WITH ONE OF OUR BRUSHES.</h2>
-                        <h2>Have you tried our popular Shorties yet? The S50 and S30 are hugely popular all over the world!</h2>
+                        <img className={styles.image} src={BrushCollageSideBar} alt="Collage of CLING ON!'s" />
+                        <h2 className={styles.leftAlign}>USE <span className={styles.hashtag}>#clingonbrushesaustralia</span> ON YOUR INSTAGRAM! WE LOVE TO SEE YOUR WORK DONE WITH ONE OF OUR BRUSHES.</h2>
+                        <h2 className={styles.leftAlign}>Have you tried our popular Shorties yet? The S50 and S30 are hugely popular all over the world!</h2>
                     </Col>
                 </Row>
             </div>

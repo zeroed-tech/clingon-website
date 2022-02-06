@@ -1,19 +1,12 @@
 import React from 'react'
 import Product from './pages/Product'
-import Home from './pages/Home'
 import {products} from '../Assets/data'
 import {
-    BrowserRouter as Router,
-    Redirect,
     Switch,
-    Route,
-    Link,
-    NavLink
+    Route
 } from "react-router-dom";
 import BrushDisplay from './BrushDisplay';
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 export default function ProductContainer() {
     
@@ -26,9 +19,7 @@ export default function ProductContainer() {
                     <Route path='/products/oval-brushes'><BrushDisplay brush={products.ovalBrushes} textAlignment={'right'}/></Route>
                     <Route path='/products/angled-brushes'><BrushDisplay brush={products.angledBrushes} /></Route>
                     <Route path='/products/block-brushes'><BrushDisplay brush={products.blockBrushes} textAlignment={'right'}/></Route>
-                    <Route path='/products/shorties'><BrushDisplay brush={products.shorties}/></Route>
-
-
+                    <Route path='/products/pointed-brushes'><BrushDisplay brush={products.pointedBrushes}/></Route>
                     <Route path='/products'><Product /></Route>
                 </Switch>
 

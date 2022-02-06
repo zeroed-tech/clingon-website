@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import { store_products } from '../../Assets/data'
 import StoreProductDisplay from '../StoreProductDisplay'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Cart from '../Cart'
+import Alert from 'react-bootstrap/Alert'
 
-export default function Store() {
+export default function Store({ loggedInUser }) {
     let [order, setOrder] = useState([])
     let [orderSubtotal, setOrderSubtotal] = useState(0)
     let [stockData, setStockData] = useState([])
-
-    let subtotal = () => {
+    let [orderSubmitted, setOrderSubmitted] = useState(false)
+    let [reloadForm, setReloadForm] = useState(false)
+    var subtotal = () => {
         let num = 0
         if (order.length > 0) {
 
@@ -24,7 +25,7 @@ export default function Store() {
             setOrderSubtotal(0)
         }
     }
-    let updateOrder = (newItem) => {
+    var updateOrder = (newItem) => {
 
         order = removeDuplicates(newItem)
         subtotal()
@@ -32,7 +33,13 @@ export default function Store() {
         setOrder(order)
 
     }
-    let removeDuplicates = (objectToInsert) => {
+    var updateOrderSubmitted = () => {
+        setOrderSubmitted(true)
+    }
+    var updateReloadForm = () => {
+        setReloadForm(true)
+    }
+    var removeDuplicates = (objectToInsert) => {
         if (order.find(match => match.id == objectToInsert.id)) {
             order.forEach((item, index) => {
                 if (item.id == objectToInsert.id) {
@@ -65,13 +72,13 @@ export default function Store() {
         <Container>
             <Row>
                 <Col lg={{ span: 8 }}>
-                    {store_products.map((product) => {
-                        return <StoreProductDisplay key={product["id"]} id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} updateOrder={updateOrder} />
-                        // return <StoreProductDisplay data={stockData} updateOrder={updateOrder}/>
+                    {stockData.map((product) => {
+                        // return <StoreProductDisplay key={product["id"]} id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} updateOrder={updateOrder} />
+                        return <StoreProductDisplay reloadForm={reloadForm} data={product} updateOrder={updateOrder} />
                     })}
                 </Col>
                 <Col lg={{ span: 4 }} style={{ backgroundColor: 'white' }}>
-                    <Cart orderedItems={order} orderSubtotal={orderSubtotal} />
+                    <Cart orderedItems={order} loggedInUser={loggedInUser} updateReloadForm={updateReloadForm} updateOrderSubmitted={updateOrderSubmitted} orderSubtotal={orderSubtotal} />
                 </Col>
 
             </Row>

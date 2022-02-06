@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import '../../css/general.css'
 import GreenBar from '../GreenBar'
-
+import TipsAndTricksImage from './../../Assets/images/Tips&TricksPage.jpg'
 import SideBar from '../SideBar';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -36,7 +36,7 @@ export default function TipsAndTricks() {
                     <p>* <b>I</b>n warmer weather (especially outdoors) the paint on your brush will dry quickly. Dipping your brush in water every now and then will keep your brush supple and prevent paint buildup.</p>
                     <hr />
                     <p>* <b>G</b>et your paint on quickly, then holding your brush at a 45° angle use just the tips of your Cling On and almost zero pressure to lay your paint all in the one direction…. then step away and leave your paint to self level. Over brushing paint as it starts to dry creates texture and results in brush strokes.</p>
-                    <img className='pictureFormat sizeFix' src='https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/s03fb617b319ccf37/image/i896538a07ca7b6ef/version/1605032517/image.jpg' />
+                    <img className='pictureFormat sizeFix' src={TipsAndTricksImage} />
                 </Col>
                 <Col className='col-right'>
                     <SideBar />

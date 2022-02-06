@@ -6,6 +6,10 @@ import styles from '../../css/home.module.css'
 import GreenBar from '../GreenBar'
 import SideBar from '../SideBar'
 import Container from 'react-bootstrap/Container'
+import HomePageBrushes from './../../Assets/images/HomePageImage.jpg'
+import EST2010 from './../../Assets/images/EST2010.png'
+import BrushInYellowBag from './../../Assets/images/BrushInYellowBag.jpg'
+
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -17,15 +21,15 @@ export default function Home() {
 
                 <Col lg={{ span: 9 }} md={{ span: 12 }} className='col-left'>
                     <h1><i>CLING ON!</i></h1><hr />
-                    <img className='pictureFormat sizeFix' src='https://image.jimcdn.com/app/cms/image/transf/dimension=640x10000:format=jpg/path/s03fb617b319ccf37/image/ied80071d26fb1637/version/1623612311/image.jpg' />
+                    <img className='pictureFormat sizeFix' src={HomePageBrushes} alt='Pile of Cling! On brushes'/>
                     <hr />
-                    <img className='pictureFormat sizeFix' src='https://image.jimcdn.com/app/cms/image/transf/dimension=379x10000:format=png/path/s03fb617b319ccf37/image/i578be7a21326f360/version/1603516094/image.png' />
+                    <img className='pictureFormat sizeFix' src={EST2010} alt='Established 2010'/>
                     <hr />
                     <h1>ABOUT CLING ON!</h1>
                     <Row>
                         <Col className='col-left'>
                             <hr />
-                            <img className='pictureFormat sizeFix' src='https://image.jimcdn.com/app/cms/image/transf/dimension=313x10000:format=jpg/path/s03fb617b319ccf37/image/ic4f14c787fb4c7c4/version/1603516035/image.jpg' />
+                            <img className='pictureFormat sizeFix' src={BrushInYellowBag} alt='Brush in yellow bag'/>
                         </Col>
                         <Col className='col-right'>
 

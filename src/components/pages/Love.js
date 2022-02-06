@@ -19,7 +19,7 @@ export default function WhyCustomersLoveClingOn() {
     return (
         <Container>
             <Row>
-            <Col lg={{span: 9}} md={{ span: 12 }} className='col-left'>
+                <Col lg={{ span: 9 }} md={{ span: 12 }} className='col-left'>
                     <h1>WHY CLING ON!?</h1>
                     <hr />
                     <p>Cling On! brushes are the favorite brush among <b>furniture painters.</b>They offer superior application, <b>no shedding</b>, and smooth flawless finishing. Featuring premium <b>synthetic filaments</b>, beech wood painted handle, <b>fully locked in epoxy</b> cement to eliminate shedding, and a <b>stainless steel ferrule</b>.  Handmade in Holland, Cling On! is designed for all waterborne materials. Brushes are available in round, oval, flat, block and angled styles.</p>
@@ -30,10 +30,8 @@ export default function WhyCustomersLoveClingOn() {
                 <Col className='col-right'>
                     <SideBar />
                     <GreenBar />
-                    <NavLink to='/why-customers-love-cling-on/tips-and-tricks'>
-                        <Button id='tips-and-tricks'>Tips & Tricks</Button>
-                    </NavLink>
-                    </Col>
+
+                </Col>
             </Row>
         </Container>
     )
