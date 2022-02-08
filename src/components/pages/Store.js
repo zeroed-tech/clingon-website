@@ -8,9 +8,9 @@ import Alert from 'react-bootstrap/Alert'
 
 export default function Store({ loggedInUser }) {
     let [order, setOrder] = useState([])
+    let [orderForEmail, setOrderForEmail] = useState([])
     let [orderSubtotal, setOrderSubtotal] = useState(0)
     let [stockData, setStockData] = useState([])
-    let [orderSubmitted, setOrderSubmitted] = useState(false)
     let [reloadForm, setReloadForm] = useState(false)
     var subtotal = () => {
         let num = 0
@@ -26,37 +26,42 @@ export default function Store({ loggedInUser }) {
         }
     }
     var updateOrder = (newItem) => {
-
-        order = removeDuplicates(newItem)
+        order = removeDuplicates(newItem, order)
         subtotal()
 
         setOrder(order)
 
     }
+    var updateOrderForEmail = (newItem) => {
+        orderForEmail = removeDuplicates(newItem, orderForEmail)
+        setOrderForEmail(orderForEmail)
+
+    }
     var updateOrderSubmitted = () => {
-        setOrderSubmitted(true)
+        alert("Order has been successfully submitted")
+        window.location.reload(false);
     }
     var updateReloadForm = () => {
         setReloadForm(true)
     }
-    var removeDuplicates = (objectToInsert) => {
-        if (order.find(match => match.id == objectToInsert.id)) {
-            order.forEach((item, index) => {
+    var removeDuplicates = (objectToInsert, data) => {
+        if (data.find(match => match.id == objectToInsert.id)) {
+            data.forEach((item, index) => {
                 if (item.id == objectToInsert.id) {
 
-                    if (objectToInsert.amount >= 0) {
-                        return order[index] = objectToInsert
+                    if (objectToInsert.amount >= 0 || objectToInsert.qty >= 0) {
+                        return data[index] = objectToInsert
 
                     } else {
-                        return order.splice(index, 1)
+                        return data.splice(index, 1)
                     }
                 }
             })
         } else {
-            order.push(objectToInsert)
+            data.push(objectToInsert)
         }
 
-        return order
+        return data
     }
     let getStock = () => {
         fetch('https://clingonaustralia.com.au/stock', {
@@ -72,19 +77,21 @@ export default function Store({ loggedInUser }) {
     }
     useEffect(() => {
         getStock()
-    })
+    }, [])
 
     return (
         <Container>
             <Row>
                 <Col lg={{ span: 8 }}>
+                
                     {stockData.map((product) => {
                         // return <StoreProductDisplay key={product["id"]} id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} updateOrder={updateOrder} />
-                        return <StoreProductDisplay reloadForm={reloadForm} data={product} updateOrder={updateOrder} />
-                    })}
+                        return <StoreProductDisplay reloadForm={reloadForm} data={product} updateOrderForEmail={updateOrderForEmail} updateOrder={updateOrder} />
+                    })
+                    }
                 </Col>
                 <Col lg={{ span: 4 }} style={{ backgroundColor: 'white' }}>
-                    <Cart orderedItems={order} loggedInUser={loggedInUser} updateReloadForm={updateReloadForm} updateOrderSubmitted={updateOrderSubmitted} orderSubtotal={orderSubtotal} />
+                    <Cart orderedItems={order} orderForEmail={orderForEmail} loggedInUser={loggedInUser} updateReloadForm={updateReloadForm} updateOrderSubmitted={updateOrderSubmitted} orderSubtotal={orderSubtotal} />
                 </Col>
 
             </Row>

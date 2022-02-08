@@ -3,21 +3,24 @@ import Button from 'react-bootstrap/Button'
 import '../css/general.css'
 import emailjs from 'emailjs-com';
 
-export default function Cart({ orderedItems, orderSubtotal, loggedInUser }) {
-    console.log("The user that I have saved is: ", loggedInUser)
+export default function Cart({ orderedItems, orderSubtotal, orderForEmail, updateOrderSubmitted, loggedInUser }) {
+    console.log("Order For Email is:" + orderForEmail)
+
+    
+
     function sendEmail(e) {
         e.preventDefault();
-        fetch("http://clingonaustralia.com.au/order", {
+        
+        fetch("https://clingonaustralia.com.au/order", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({
-                "id": orderedItems.id,
-                "qty": orderedItems.amount
-            })
+            body: JSON.stringify(orderForEmail)
 
         })
+        .then(resp => updateOrderSubmitted())
+        
 
     }
     let orderForSend = orderedItems.map(each => {

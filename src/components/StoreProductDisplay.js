@@ -2,7 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import "../css/general.css"
-export default function StoreProductDisplay({data, updateOrder, reloadForm}) {
+export default function StoreProductDisplay({data, updateOrder, updateOrderForEmail, reloadForm}) {
     let tempWidth = window.innerWidth > 520 ? '15rem' : '45vw';
     let {
         price,
@@ -21,7 +21,9 @@ export default function StoreProductDisplay({data, updateOrder, reloadForm}) {
                     <input onChange={(e) => {
                         let amount = parseInt(e.target.value)
                         
+                        updateOrderForEmail({"id": id, "qty": amount})
                         updateOrder({code, price, rrp, id, amount})
+                        
                     }} type='text' style={{width: '30%'}} placeholder='Qty'/>
                     </form>
                 </Card.Body>

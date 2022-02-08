@@ -52,7 +52,7 @@ export default function NavigationBar() {
       .catch(err => console.error(err))
   }
   var handleLogout = () => {
-    fetch('http://clingonaustralia.com.au/logout', {
+    fetch('https://clingonaustralia.com.au/logout', {
       method: 'GET',
       header: {
         'Content-Type': 'application/json'
@@ -77,6 +77,9 @@ export default function NavigationBar() {
           <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/why-customers-love-cling-on'><b>WHY OUR CUSTOMERS LOVE CLING ON!</b></NavLink>
           <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/contact'><b>CONTACT</b></NavLink>
           <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/tips-and-tricks'><b>TIPS & TRICKS</b></NavLink>
+          {loggedIn && <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/store'><b>STORE</b></NavLink>}
+          {!loggedIn && <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/login'><b>LOGIN</b></NavLink>}
+          {loggedIn && <NavLink  className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
 
         </nav>
 
@@ -90,6 +93,8 @@ export default function NavigationBar() {
           <NavLink to='/why-customers-love-cling-on' onClick={handleClick} className={`menu-item`}><b>WHY OUR CUSTOMERS LOVE CLING ON!</b></NavLink>
           <NavLink to='/contact' onClick={handleClick} className={`menu-item`}><b>CONTACT</b></NavLink>
           <NavLink to='/tips-and-tricks' onClick={handleClick} className={`menu-item`}><b>TIPS & TRICKS</b></NavLink>
+          {!loggedIn && <NavLink className={`menu-item`} to='/login'><b>LOGIN</b></NavLink>}
+          {loggedIn && <NavLink  className={`menu-item`} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
 
         </Menu>
       </div>
@@ -113,8 +118,7 @@ export default function NavigationBar() {
       <footer className="bg-light text-center text-lg-start">
         <div className={cx(globalStyles['text-center'], globalStyles['p-3'], styles.footerBackground)}>
           © {new Date().getFullYear()} Copyright: DJ
-          {!loggedIn && <NavLink style={{ float: 'right', textDecoration: 'none' }} to='/login'>login</NavLink>}
-          {loggedIn && <NavLink style={{ float: 'right', textDecoration: 'none' }} to='/' onClick={() => handleLogout()}>logout</NavLink>}
+          
 
         </div>
       </footer>
