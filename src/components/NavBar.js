@@ -36,7 +36,7 @@ export default function NavigationBar() {
     getUserInformation(username)
   }
   var getUserInformation = (username) => {
-    fetch('http://clingonaustralia.com.au/admin/user', {
+    fetch('https://clingonaustralia.com.au/user', {
       method: 'GET',
       header: {
         'Content-Type': 'application/json'
@@ -44,10 +44,10 @@ export default function NavigationBar() {
     })
       .then(resp => resp.json())
       .then(data => {
-        let user = data.find(each => each.username == username)
-        setLoggedInUser(user)
-        window.localStorage.setItem('loggedInUser', JSON.stringify(user));
-        console.log("The logged in user is: ", user)
+        console.log("The user that is logged in is:", data)
+        
+        setLoggedInUser(data)
+        window.localStorage.setItem('loggedInUser', JSON.stringify(data));
       })
       .catch(err => console.error(err))
   }
