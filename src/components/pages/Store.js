@@ -59,7 +59,13 @@ export default function Store({ loggedInUser }) {
         return order
     }
     let getStock = () => {
-        fetch('http://clingonaustralia.com.au/stock')
+        fetch('https://clingonaustralia.com.au/stock', {
+            method: 'GET',
+            header: {
+                'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+        })
             .then(resp => resp.json())
             .then(data => setStockData(data))
             .catch(err => console.error(err))

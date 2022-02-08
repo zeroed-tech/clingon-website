@@ -18,11 +18,12 @@ export default function Login({ handleLogin }) {
     let history = useHistory();
 
     let handleSubmit = () => {
-        fetch('http://clingonaustralia.com.au/login', {
+        fetch('https://clingonaustralia.com.au/login', {
             method: 'POST',
             header: {
                 'Content-Type': 'application/json'
             },
+            credentials: 'include',
             body: JSON.stringify({
                 'username': userName,
                 'password': password
