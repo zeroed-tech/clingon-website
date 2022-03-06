@@ -113,7 +113,7 @@ export default function Products() {
                     <SideBar />
                     <ul className={styles.list}>
                         <NavLink to='/products/shorties' ><li className={`${styles.listItem} ${styles.top}`}><b>Shorties</b></li></NavLink>
-                        <NavLink to='/products/pointed-brushes' ><li className={styles.listItem}><b>Pointed Brushes</b></li></NavLink>
+                        <NavLink to='/products/pointed-brushes' ><li className={styles.listItem}><b>Pointies</b></li></NavLink>
                         <NavLink to='/products/flat-angled' ><li className={styles.listItem}><b>Flat Angled</b></li></NavLink>
                         <NavLink to='/products/flat-angled-short' ><li className={styles.listItem}><b>Flat Angled (Short)</b></li></NavLink>
                         <NavLink to='/products/round-brushes/'><li className={styles.listItem}><b>Round Brushes</b></li></NavLink>
