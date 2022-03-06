@@ -2,7 +2,7 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import "../css/general.css"
-export default function StoreProductDisplay({data, updateOrder, updateOrderForEmail, reloadForm}) {
+export default function StoreProductDisplay({data, updateOrder, updateOrderForEmail}) {
     let tempWidth = window.innerWidth > 520 ? '15rem' : '45vw';
     let {
         price,

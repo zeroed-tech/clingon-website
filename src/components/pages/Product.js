@@ -6,13 +6,8 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import GreenBar from '../GreenBar'
 import cx from 'classnames'
 import ProductHeadPhoto from './../../Assets/images/Cling-On-Fun-Graphic.jpg'
-import Shorties from './../../Assets/images/ShortiesLargeSized.jpg'
-import FlatBrushes from './../../Assets/images/FlatsLarge.jpg'
-import RoundBrushes from './../../Assets/images/RoundsLargeSized.jpg'
-import OvalBrushes from './../../Assets/images/OvalsLargeSized.jpg'
-import AngledBrushes from './../../Assets/images/AngledLargeSized.jpg'
-import BlockBrushes from './../../Assets/images/BlockLargeSized.jpg'
-import PointedBrushes from './../../Assets/images/PointiesFullSized.jpg'
+import { products } from '../../Assets/data'
+
 
 
 
@@ -43,22 +38,35 @@ export default function Products() {
                         <Row>
                             <Col md sm={{ span: 12 }} className='col-left'>
                                 <NavLink to='/products/shorties' >
-                                    <img className='pictureFormat productLimitSize' src={Shorties} />
+                                    <img className='pictureFormat productLimitSize' src={products.shorties.image} />
                                     <button className={styles.productButtons}>Shorties</button>
                                 </NavLink>
                             </Col>
                             <Col md sm={{ span: 12 }} className='col-left'>
-                                <NavLink to='/products/flat-brushes'>
-
-                                    <img className='pictureFormat productLimitSize sizeFix' src={FlatBrushes} />
-                                    <button className={styles.productButtons}>Flat Brushes</button>
+                                <NavLink to='/products/pointed-brushes' >
+                                    <img className='pictureFormat productLimitSize' src={products.pointedBrushes.image} />
+                                    <button className={styles.productButtons}>Pointies</button>
+                                </NavLink>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md sm={{ span: 12 }} className='col-left'>
+                                <NavLink to='/products/flat-angled' >
+                                    <img className='pictureFormat productLimitSize' src={products.flatAngled.image} />
+                                    <button className={styles.productButtons}>Flat Angled</button>
+                                </NavLink>
+                            </Col>
+                            <Col md sm={{ span: 12 }} className='col-left'>
+                                <NavLink to='/products/flat-angled-short' >
+                                    <img className='pictureFormat productLimitSize' src={products.flatAngledShort.image} />
+                                    <button className={styles.productButtons}>Flat Angled (Short)</button>
                                 </NavLink>
                             </Col>
                         </Row>
                         <Row>
                             <Col md sm={{ span: 12 }} className='col-left'>
                                 <NavLink to='/products/round-brushes'>
-                                    <img className='pictureFormat productLimitSize sizeFix' src={RoundBrushes} />
+                                    <img className='pictureFormat productLimitSize sizeFix' src={products.roundBrushes.image} />
                                     <button className={styles.productButtons}>Round Brushes</button>
                                 </NavLink>
 
@@ -67,23 +75,24 @@ export default function Products() {
                             <Col md sm={{ span: 12 }} className='col-left'>
                                 <NavLink to='/products/oval-brushes'>
 
-                                    <img className='pictureFormat productLimitSize sizeFix' src={OvalBrushes} />
+                                    <img className='pictureFormat productLimitSize sizeFix' src={products.ovalBrushes.image} />
                                     <button className={styles.productButtons}>Oval Brushes</button>
                                 </NavLink>
                             </Col>
                         </Row>
                         <Row>
                             <Col md sm={{ span: 12 }} className='col-left'>
-                                <NavLink to='/products/angled-brushes'>
+                                <NavLink to='/products/flat-brushes'>
 
-                                    <img className='pictureFormat productLimitSize sizeFix' src={AngledBrushes} />
-                                    <button className={styles.productButtons}>Angled Brushes</button>
+                                    <img className='pictureFormat productLimitSize sizeFix' src={products.flatBrushes.image} />
+                                    <button className={styles.productButtons}>Flat Brushes</button>
                                 </NavLink>
                             </Col>
                             <Col md sm={{ span: 12 }} className='col-left'>
-                                <NavLink to='/products/pointed-brushes' >
-                                    <img className='pictureFormat productLimitSize' src={PointedBrushes} />
-                                    <button className={styles.productButtons}>Pointed</button>
+                                <NavLink to='/products/angled-brushes'>
+
+                                    <img className='pictureFormat productLimitSize sizeFix' src={products.angledBrushes.image} />
+                                    <button className={styles.productButtons}>Angled Brushes</button>
                                 </NavLink>
                             </Col>
 
@@ -93,7 +102,7 @@ export default function Products() {
                             <Col md sm={{ span: 12 }} className='col-left'>
                                 <NavLink to='/products/block-brushes'>
 
-                                    <img className='pictureFormat productLimitSize sizeFix' src={BlockBrushes} />
+                                    <img className='pictureFormat productLimitSize sizeFix' src={products.blockBrushes.image} />
                                     <button className={styles.productButtons}>Block Brushes</button>
                                 </NavLink>
                             </Col>
@@ -104,11 +113,13 @@ export default function Products() {
                     <SideBar />
                     <ul className={styles.list}>
                         <NavLink to='/products/shorties' ><li className={`${styles.listItem} ${styles.top}`}><b>Shorties</b></li></NavLink>
-                        <NavLink to='/products/flat-brushes' ><li className={styles.listItem}><b>Flat Brushes</b></li></NavLink>
+                        <NavLink to='/products/pointed-brushes' ><li className={styles.listItem}><b>Pointed Brushes</b></li></NavLink>
+                        <NavLink to='/products/flat-angled' ><li className={styles.listItem}><b>Flat Angled</b></li></NavLink>
+                        <NavLink to='/products/flat-angled-short' ><li className={styles.listItem}><b>Flat Angled (Short)</b></li></NavLink>
                         <NavLink to='/products/round-brushes/'><li className={styles.listItem}><b>Round Brushes</b></li></NavLink>
                         <NavLink to='/products/oval-brushes' ><li className={styles.listItem}><b>Oval Brushes</b></li></NavLink>
+                        <NavLink to='/products/flat-brushes' ><li className={styles.listItem}><b>Flat Brushes</b></li></NavLink>
                         <NavLink to='/products/angled-brushes' ><li className={styles.listItem}><b>Angled Brushes</b></li></NavLink>
-                        <NavLink to='/products/pointed-brushes' ><li className={styles.listItem}><b>Pointed Brushes</b></li></NavLink>
                         <NavLink to='/products/block-brushes' ><li className={`${styles.listItem} ${styles.last}`}><b>Block Brushes</b></li></NavLink>
 
                     </ul>

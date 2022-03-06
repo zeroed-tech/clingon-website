@@ -1,0 +1,6 @@
+2022/03/03-21:27:47.896 1ab15 Creating DB /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_5dd92499f097d61f4807283a638739df.safeframe.googlesyndication.com_0.indexeddb.leveldb since it was missing.
+2022/03/03-21:27:47.906 1ab15 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_5dd92499f097d61f4807283a638739df.safeframe.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/03-21:27:51.975 2677a Level-0 table #5: started
+2022/03/03-21:27:51.978 2677a Level-0 table #5: 460 bytes OK
+2022/03/03-21:27:51.982 2677a Delete type=0 #3
+2022/03/03-21:27:51.982 2677a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

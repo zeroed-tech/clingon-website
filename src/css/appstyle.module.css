@@ -1,18 +1,17 @@
 
 
 .navigationBar .menuItem {
-    width: auto;
     font-size: 1rem;
-    display: inline-block;
-    position: relative;
+    
+
     color: white;
-    clear: both;
-    margin: 2% -1% 2% -1%;
+    margin: 0% 1% 2% 1%;
     padding: 2% 1% 2% 1%;
-    justify-content: center;
-    white-space: nowrap;
     text-align: center;
+    margin: 0 auto;
     font-weight: 100;
+    
+    justify-content: center;
 }
 
 .navigationBar .menuItem:hover {
@@ -24,16 +23,16 @@
 }
 
 .navBarWrapper {
-    position: relative;
     background-color: rgba(2, 2, 2, 0.4);
     width:  100%;
+    height: 6vw;
+    
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 .navigationBar {
-    margin-left: 8.5%;
-    margin-right: 10%;
-    width: 81.5%;
+    width: 72vw;
+    margin: 0 auto;
 }
 .burgerMenu {
     display: none;
@@ -43,6 +42,12 @@
     border-top: solid black 1px;
     margin-top: 5%;
 
+}
+.menuWrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    
 }
 
 @keyframes fade {
@@ -54,7 +59,8 @@
     }
 }
 @media (max-width: 1270px) {
-    .navigationBar {
+
+    .navBarWrapper {
         display: none;
     }
     .burgerMenu {

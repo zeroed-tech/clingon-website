@@ -5,9 +5,25 @@ import flatBrushes from './images/FlatsFullSized.jpg'
 import ovalBrushes from './images/OvalsFullSized.jpg'
 import blockBrushes from './images/BlockLargeSized.jpg'
 import pointedBrushes from './images/PointiesFullSized.jpg'
+import flatAngled from './images/FullSizedFA40.jpg'
+import flatAngledShort from './images/FullSizedFA50.jpg'
 
 
 export var products = {
+    flatAngled: {
+        title: <h1>- Flat Angled - </h1>,
+        description: <p>Closely related to our most popular Flat Brush the F40, but with a fabulous angled head, <br />
+            the FA40 (Flat Angled 40) is ideal for precision edge work and cutting in where a little extra reach is needed.
+            </p>,
+            writeUp: <p><b>- F40 -</b><br />Medium Flat<br />Width: 1.6” (40mm)<br />Filaments length: 2.5” (63mm)<br />Handle: 6.8” (173mm)<br /></p>,
+            image: flatAngled
+    },
+    flatAngledShort: {
+        title: <h1>- Flat Angled (short) - </h1>,
+        description: <p>First cousin to the ever popular Shortie 50 (S50) the Flat Angled 50 (FA50) has an angled/tapered head for cutting in and precision edging!</p>,
+            writeUp: <p><b> - S50 -</b>  <br /> Short handle large <br /> Width: 2” (50mm)<br />  Filaments Length 2.1” (53mm) <br /> Handle: 3.8" (97mm)</p>,
+            image: flatAngledShort
+    },
     roundBrushes: {
         title: <h1>- ROUND BRUSHES - </h1>,
         description: <p>The Cling On! Round paintbrushes are perfect for spindles, banisters and detailed work.<br />

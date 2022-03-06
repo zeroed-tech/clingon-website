@@ -68,19 +68,20 @@ export default function NavigationBar() {
   return (
     <>
 
-      <div className={cx(styles.navBarWrapper)}>
-        <nav className={cx(globalStyles.navbar, styles.navigationBar)}>
-          <NavLink exact className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/'><b>HOME</b></NavLink>
-          <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/products'><b>THE BRUSHES</b></NavLink>
-          <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/find-a-retailer'><b>FIND A RETAILER</b></NavLink>
-          <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/become-a-retailer'><b>BECOME A RETAILER</b></NavLink>
-          <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/why-customers-love-cling-on'><b>WHY OUR CUSTOMERS LOVE CLING ON!</b></NavLink>
-          <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/contact'><b>CONTACT</b></NavLink>
-          <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/tips-and-tricks'><b>TIPS & TRICKS</b></NavLink>
-          {loggedIn && <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/store'><b>STORE</b></NavLink>}
-          {!loggedIn && <NavLink className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/login'><b>LOGIN</b></NavLink>}
-          {loggedIn && <NavLink  className={cx(globalStyles.navbar, globalStyles['nav-link'], styles.menuItem)} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
-
+      <div className={styles.navBarWrapper}>
+        <nav className={styles.navigationBar}>
+          <div className={styles.menuWrapper}>
+          <NavLink exact className={styles.menuItem} to='/'><b>HOME</b></NavLink>
+          <NavLink className={styles.menuItem} to='/products'><b>THE BRUSHES</b></NavLink>
+          <NavLink className={styles.menuItem} to='/find-a-retailer'><b>FIND A RETAILER</b></NavLink>
+          <NavLink className={styles.menuItem} to='/become-a-retailer'><b>BECOME A RETAILER</b></NavLink>
+          <NavLink className={styles.menuItem} to='/why-customers-love-cling-on'><b>WHY CLING ON?</b></NavLink>
+          <NavLink className={styles.menuItem} to='/contact'><b>CONTACT</b></NavLink>
+          <NavLink className={styles.menuItem} to='/tips-and-tricks'><b>TIPS & TRICKS</b></NavLink>
+          {loggedIn && <NavLink className={styles.menuItem} to='/store'><b>STORE</b></NavLink>}
+          {!loggedIn && <NavLink className={styles.menuItem} to='/login'><b>LOGIN</b></NavLink>}
+          {loggedIn && <NavLink  className={styles.menuItem} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
+          </div>
         </nav>
 
       </div>
@@ -90,11 +91,12 @@ export default function NavigationBar() {
           <NavLink to='/products' onClick={handleClick} className={`menu-item`}><b>THE BRUSHES</b></NavLink>
           <NavLink to='/find-a-retailer' onClick={handleClick} className={`menu-item`}><b>FIND A RETAILER</b></NavLink>
           <NavLink to='/become-a-retailer' onClick={handleClick} className={`menu-item`}><b>BECOME A RETAILER</b></NavLink>
-          <NavLink to='/why-customers-love-cling-on' onClick={handleClick} className={`menu-item`}><b>WHY OUR CUSTOMERS LOVE CLING ON!</b></NavLink>
+          <NavLink to='/why-customers-love-cling-on' onClick={handleClick} className={`menu-item`}><b>WHY CLING ON?</b></NavLink>
           <NavLink to='/contact' onClick={handleClick} className={`menu-item`}><b>CONTACT</b></NavLink>
           <NavLink to='/tips-and-tricks' onClick={handleClick} className={`menu-item`}><b>TIPS & TRICKS</b></NavLink>
-          {!loggedIn && <NavLink className={`menu-item`} to='/login'><b>LOGIN</b></NavLink>}
-          {loggedIn && <NavLink  className={`menu-item`} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
+          {loggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/store'><b>STORE</b></NavLink>}
+          {!loggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/login'><b>LOGIN</b></NavLink>}
+          {loggedIn && <NavLink  onClick={handleClick} className={`menu-item`} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
 
         </Menu>
       </div>

@@ -145,6 +145,14 @@ hr.style-eight:after {
 .store-brush-display {
     min-height: 200px;
 }
+.quote {
+    text-align: right;
+    font-style: italic;
+}
+#quote-box {
+    width: 70%;
+    margin: 0 auto;
+}
 
 @keyframes zoom {
     0% {
