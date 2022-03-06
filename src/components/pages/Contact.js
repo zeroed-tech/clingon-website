@@ -73,7 +73,7 @@ export default function Contact() {
                         </Col>
                         <Col className='col-right'>
                             <h4><b>Hayley Justice - Australian Distributor</b></h4>
-                            <p><br />Address: <br />PO Box 213, <br />Wonthaggi Victoria <br />3995<br />Phone: 0439 - 375 - 904<br />Email: clingonaustralia@gmail.com<br />ABN: 44331876608 <br />  </p>
+                            <address><br />Address: <br />PO Box 213, <br />Wonthaggi Victoria <br />3995<br />Phone: 0439 - 375 - 904<br />Email: clingonaustralia@gmail.com<br />ABN: 44331876608 <br />  </address>
                         </Col>
 
                     </Row>

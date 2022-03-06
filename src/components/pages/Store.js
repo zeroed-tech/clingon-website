@@ -83,9 +83,8 @@ export default function Store({ loggedInUser }) {
         <Container>
             <Row>
                 <Col lg={{ span: 8 }}>
-                
+                    <h3 style={{ width: '84%'}}>Cling On! Wholesale Pricelist 2022 <small style={{fontSize: '15px'}}>Prices include GST</small></h3>
                     {stockData.map((product) => {
-                        // return <StoreProductDisplay key={product["id"]} id={product['id']} name={product['name']} price={product['price']} RRP={product['RRP']} updateOrder={updateOrder} />
                         return <StoreProductDisplay reloadForm={reloadForm} data={product} updateOrderForEmail={updateOrderForEmail} updateOrder={updateOrder} />
                     })
                     }
@@ -98,3 +97,5 @@ export default function Store({ loggedInUser }) {
         </Container>
     )
 }
+
+

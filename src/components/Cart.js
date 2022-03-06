@@ -41,7 +41,16 @@ export default function Cart({ orderedItems, orderSubtotal, orderForEmail, updat
             <hr className='style-eight' />
             <form onSubmit={sendEmail}>
                 <input type="hidden" name="confirmation_email" value={loggedInUser ? 'phanaxe@gmail.com' : ''} />
-                <Button variant='primary' type="submit">Submit</Button>
+                <Button variant='primary' type="submit" style={{display: 'inline-block'}}>Confirm Order</Button>
+                <div style={{display: 'inline-block', width: '60%', fontSize: '15px', float: 'right', backgroundColor: 'rgba(0,0,0,0.1)'}}>
+                    <p>HOW TO ORDER:</p>
+                    <ol>
+                        <li>Select brushes and quantity</li>
+                        <li>Click 'Confirm Order'</li>
+                        <li>A confirmation email will be sent of your order to your email address</li>
+                        <li>An invoice for your order, including freight, will be issued via email within 12 hours</li>
+                    </ol>
+                </div>
             </form>
 
         </div>
