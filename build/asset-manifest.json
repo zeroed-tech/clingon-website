@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/clingon-website/static/css/main.46e8e5c1.chunk.css",
-    "main.js": "/clingon-website/static/js/main.4cbe2348.chunk.js",
-    "main.js.map": "/clingon-website/static/js/main.4cbe2348.chunk.js.map",
+    "main.css": "/clingon-website/static/css/main.6a8044a9.chunk.css",
+    "main.js": "/clingon-website/static/js/main.8b997635.chunk.js",
+    "main.js.map": "/clingon-website/static/js/main.8b997635.chunk.js.map",
     "runtime-main.js": "/clingon-website/static/js/runtime-main.755a1307.js",
     "runtime-main.js.map": "/clingon-website/static/js/runtime-main.755a1307.js.map",
-    "static/js/2.a2c1d586.chunk.js": "/clingon-website/static/js/2.a2c1d586.chunk.js",
-    "static/js/2.a2c1d586.chunk.js.map": "/clingon-website/static/js/2.a2c1d586.chunk.js.map",
+    "static/js/2.de9ddbfd.chunk.js": "/clingon-website/static/js/2.de9ddbfd.chunk.js",
+    "static/js/2.de9ddbfd.chunk.js.map": "/clingon-website/static/js/2.de9ddbfd.chunk.js.map",
     "index.html": "/clingon-website/index.html",
-    "static/css/main.46e8e5c1.chunk.css.map": "/clingon-website/static/css/main.46e8e5c1.chunk.css.map",
-    "static/js/2.a2c1d586.chunk.js.LICENSE.txt": "/clingon-website/static/js/2.a2c1d586.chunk.js.LICENSE.txt",
+    "static/css/main.6a8044a9.chunk.css.map": "/clingon-website/static/css/main.6a8044a9.chunk.css.map",
+    "static/js/2.de9ddbfd.chunk.js.LICENSE.txt": "/clingon-website/static/js/2.de9ddbfd.chunk.js.LICENSE.txt",
     "static/media/AngledFullSized.58942ecf.jpg": "/clingon-website/static/media/AngledFullSized.58942ecf.jpg",
-    "static/media/AngledLargeSized.b56cf2d8.jpg": "/clingon-website/static/media/AngledLargeSized.b56cf2d8.jpg",
     "static/media/BlockLargeSized.e7869798.jpg": "/clingon-website/static/media/BlockLargeSized.e7869798.jpg",
     "static/media/BlueBrushesSideBar.feb71d8f.jpg": "/clingon-website/static/media/BlueBrushesSideBar.feb71d8f.jpg",
     "static/media/BrushCollageSideBar.da184e38.jpg": "/clingon-website/static/media/BrushCollageSideBar.da184e38.jpg",
@@ -21,23 +20,21 @@
     "static/media/ContactPageImage.d078472d.jpg": "/clingon-website/static/media/ContactPageImage.d078472d.jpg",
     "static/media/EST2010.21ffd038.png": "/clingon-website/static/media/EST2010.21ffd038.png",
     "static/media/FlatsFullSized.17b05921.jpg": "/clingon-website/static/media/FlatsFullSized.17b05921.jpg",
-    "static/media/FlatsLarge.ef3fa254.jpg": "/clingon-website/static/media/FlatsLarge.ef3fa254.jpg",
+    "static/media/FullSizedFA40.32f41bc4.jpg": "/clingon-website/static/media/FullSizedFA40.32f41bc4.jpg",
+    "static/media/FullSizedFA50.0a606654.jpg": "/clingon-website/static/media/FullSizedFA50.0a606654.jpg",
     "static/media/GreenBrush.66264a51.jpg": "/clingon-website/static/media/GreenBrush.66264a51.jpg",
     "static/media/HomePageImage.b11422a2.jpg": "/clingon-website/static/media/HomePageImage.b11422a2.jpg",
     "static/media/OvalsFullSized.0a40de8f.jpg": "/clingon-website/static/media/OvalsFullSized.0a40de8f.jpg",
-    "static/media/OvalsLargeSized.26d45a03.jpg": "/clingon-website/static/media/OvalsLargeSized.26d45a03.jpg",
     "static/media/PointiesFullSized.ae187aae.jpg": "/clingon-website/static/media/PointiesFullSized.ae187aae.jpg",
     "static/media/RoundsFullSized.d4e1df4e.jpg": "/clingon-website/static/media/RoundsFullSized.d4e1df4e.jpg",
-    "static/media/RoundsLargeSized.b52f257b.jpg": "/clingon-website/static/media/RoundsLargeSized.b52f257b.jpg",
     "static/media/ShortiesFullSized.3b8932ed.jpg": "/clingon-website/static/media/ShortiesFullSized.3b8932ed.jpg",
-    "static/media/ShortiesLargeSized.ff30f3d1.jpg": "/clingon-website/static/media/ShortiesLargeSized.ff30f3d1.jpg",
     "static/media/Tips&TricksPage.5a1f9927.jpg": "/clingon-website/static/media/Tips&TricksPage.5a1f9927.jpg",
     "static/media/YellowPiano.aa611aa3.jpg": "/clingon-website/static/media/YellowPiano.aa611aa3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.755a1307.js",
-    "static/js/2.a2c1d586.chunk.js",
-    "static/css/main.46e8e5c1.chunk.css",
-    "static/js/main.4cbe2348.chunk.js"
+    "static/js/2.de9ddbfd.chunk.js",
+    "static/css/main.6a8044a9.chunk.css",
+    "static/js/main.8b997635.chunk.js"
   ]
 }

@@ -12,7 +12,7 @@ html,body
     
 }
 #cling-on-logo {
-    width: 100%;
+    width: 93%;
     position: relative;
     display: block;
     margin-left: 7%;
@@ -153,6 +153,9 @@ hr.style-eight:after {
     width: 70%;
     margin: 0 auto;
 }
+.brush-in-yellow-bag {
+    display: none;
+}
 
 @keyframes zoom {
     0% {
@@ -161,5 +164,13 @@ hr.style-eight:after {
     100% {
         transform: scale(1.05);
 
+    }
+}
+@media (max-width: 1270px) {
+    .home-column-picture-fix{
+        display: none;
+    }
+    .brush-in-yellow-bag {
+        display: block;
     }
 }

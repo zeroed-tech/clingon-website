@@ -27,13 +27,14 @@ export default function Home() {
                     <hr />
                     <h1>ABOUT CLING ON!</h1>
                     <Row>
-                        <Col className='col-left'>
+                        <Col className='col-left home-column-picture-fix'>
                             <hr />
-                            <img className='pictureFormat sizeFix' src={BrushInYellowBag} alt='Brush in yellow bag'/>
+                            <img className='pictureFormat sizeFix ' src={BrushInYellowBag} alt='Brush in yellow bag'/>
                         </Col>
                         <Col className='col-right'>
 
                             <hr />
+                            <img className='pictureFormat sizeFix brush-in-yellow-bag' src={BrushInYellowBag} alt='Brush in yellow bag'/>
                             <div className={styles.homePageDescriptions}>
                                 <p><b>CLING ON!</b> is the youngest paintbrush in The Netherlands, yet filled with decades of experience.</p>
                                 <p><b>Designed</b> by a Dutch painter on the job on a daily basis, with the expertise & experience to know what a paintbrush should do and what it should feel like.</p>
