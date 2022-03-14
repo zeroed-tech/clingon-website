@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a75e42b.chunk.css",
+    "main.js": "/static/js/main.d2926ee3.chunk.js",
+    "main.js.map": "/static/js/main.d2926ee3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.97e72c40.js",
+    "runtime-main.js.map": "/static/js/runtime-main.97e72c40.js.map",
+    "static/js/2.de9ddbfd.chunk.js": "/static/js/2.de9ddbfd.chunk.js",
+    "static/js/2.de9ddbfd.chunk.js.map": "/static/js/2.de9ddbfd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7a75e42b.chunk.css.map": "/static/css/main.7a75e42b.chunk.css.map",
+    "static/js/2.de9ddbfd.chunk.js.LICENSE.txt": "/static/js/2.de9ddbfd.chunk.js.LICENSE.txt",
+    "static/media/AngledFullSized.58942ecf.jpg": "/static/media/AngledFullSized.58942ecf.jpg",
+    "static/media/BlockLargeSized.e7869798.jpg": "/static/media/BlockLargeSized.e7869798.jpg",
+    "static/media/BlueBrushesSideBar.feb71d8f.jpg": "/static/media/BlueBrushesSideBar.feb71d8f.jpg",
+    "static/media/BrushCollageSideBar.da184e38.jpg": "/static/media/BrushCollageSideBar.da184e38.jpg",
+    "static/media/BrushInYellowBag.b3e384de.jpg": "/static/media/BrushInYellowBag.b3e384de.jpg",
+    "static/media/CLINGONwhiteWEB.157159b1.png": "/static/media/CLINGONwhiteWEB.157159b1.png",
+    "static/media/Cling-On-Fun-Graphic.5814e2a6.jpg": "/static/media/Cling-On-Fun-Graphic.5814e2a6.jpg",
+    "static/media/ContactPageImage.d078472d.jpg": "/static/media/ContactPageImage.d078472d.jpg",
+    "static/media/EST2010.21ffd038.png": "/static/media/EST2010.21ffd038.png",
+    "static/media/FlatsFullSized.17b05921.jpg": "/static/media/FlatsFullSized.17b05921.jpg",
+    "static/media/FullSizedFA40.32f41bc4.jpg": "/static/media/FullSizedFA40.32f41bc4.jpg",
+    "static/media/FullSizedFA50.0a606654.jpg": "/static/media/FullSizedFA50.0a606654.jpg",
+    "static/media/GreenBrush.66264a51.jpg": "/static/media/GreenBrush.66264a51.jpg",
+    "static/media/HomePageImage.b11422a2.jpg": "/static/media/HomePageImage.b11422a2.jpg",
+    "static/media/OvalsFullSized.0a40de8f.jpg": "/static/media/OvalsFullSized.0a40de8f.jpg",
+    "static/media/PointiesFullSized.ae187aae.jpg": "/static/media/PointiesFullSized.ae187aae.jpg",
+    "static/media/RoundsFullSized.d4e1df4e.jpg": "/static/media/RoundsFullSized.d4e1df4e.jpg",
+    "static/media/ShortiesFullSized.3b8932ed.jpg": "/static/media/ShortiesFullSized.3b8932ed.jpg",
+    "static/media/Tips&TricksPage.5a1f9927.jpg": "/static/media/Tips&TricksPage.5a1f9927.jpg",
+    "static/media/YellowPiano.aa611aa3.jpg": "/static/media/YellowPiano.aa611aa3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97e72c40.js",
+    "static/js/2.de9ddbfd.chunk.js",
+    "static/css/main.7a75e42b.chunk.css",
+    "static/js/main.d2926ee3.chunk.js"
+  ]
+}

@@ -51,7 +51,7 @@ export default function GreenBar() {
                         <img className={styles.image} src={BlueBrushesSideBar} alt="Paint brushes" />
                         <h2>YOURS FOR YEARS... EXTREMELY DURABLE!</h2>
                         <img className={styles.image} src={BrushCollageSideBar} alt="Collage of CLING ON!'s" />
-                        <h2 className={styles.leftAlign}>USE <span className={styles.hashtag}>#clingonbrushesaustralia</span> ON YOUR INSTAGRAM! WE LOVE TO SEE YOUR WORK DONE WITH ONE OF OUR BRUSHES.</h2>
+                        <h2 className={styles.leftAlign}>USE <span className={styles.hashtag}>#clingonaustralia</span> ON YOUR INSTAGRAM! WE LOVE TO SEE YOUR WORK DONE WITH ONE OF OUR BRUSHES.</h2>
                         <h2 className={styles.leftAlign}>Have you tried our popular Shorties yet? The S50 and S30 are hugely popular all over the world!</h2>
                     </Col>
                 </Row>
