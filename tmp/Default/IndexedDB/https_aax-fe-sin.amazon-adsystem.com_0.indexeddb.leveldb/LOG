@@ -1,6 +1,3 @@
-2022/03/06-21:08:10.847 32388 Creating DB /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_aax-fe-sin.amazon-adsystem.com_0.indexeddb.leveldb since it was missing.
-2022/03/06-21:08:10.856 32388 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_aax-fe-sin.amazon-adsystem.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/03/06-21:14:20.829 36d2a Level-0 table #5: started
-2022/03/06-21:14:20.833 36d2a Level-0 table #5: 411 bytes OK
-2022/03/06-21:14:20.837 36d2a Delete type=0 #3
-2022/03/06-21:14:20.837 36d2a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/03/13-12:05:07.045 16662 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_aax-fe-sin.amazon-adsystem.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/13-12:05:07.045 16662 Recovering log #4
+2022/03/13-12:05:07.045 16662 Reusing old log /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_aax-fe-sin.amazon-adsystem.com_0.indexeddb.leveldb/000004.log 

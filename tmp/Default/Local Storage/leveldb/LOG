@@ -1,3 +1,6 @@
-2022/03/06-21:17:08.424 3 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/MANIFEST-000001
-2022/03/06-21:17:08.425 3 Recovering log #6
-2022/03/06-21:17:08.425 3 Reusing old log /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/000006.log 
+2022/03/14-14:01:18.499 3 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/MANIFEST-000001
+2022/03/14-14:01:18.499 3 Recovering log #9
+2022/03/14-14:01:18.500 3 Reusing old log /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/000009.log 
+2022/03/14-14:02:23.411 3 Level-0 table #13: started
+2022/03/14-14:02:23.419 3 Level-0 table #13: 59074 bytes OK
+2022/03/14-14:02:23.424 3 Delete type=0 #9

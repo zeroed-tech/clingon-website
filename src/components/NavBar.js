@@ -8,6 +8,7 @@ import ProductContainer from './ProductContainer'
 import WhyCustomersLoveClingOn from './pages/Love'
 import Store from './pages/Store'
 import Home from './pages/Home'
+import PasswordReset from './pages/PasswordReset'
 
 import { stack as Menu } from 'react-burger-menu'
 import {
@@ -96,7 +97,7 @@ export default function NavigationBar() {
           <NavLink to='/tips-and-tricks' onClick={handleClick} className={`menu-item`}><b>TIPS & TRICKS</b></NavLink>
           {loggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/store'><b>STORE</b></NavLink>}
           {!loggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/login'><b>LOGIN</b></NavLink>}
-          {loggedIn && <NavLink  onClick={handleClick} className={`menu-item`} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
+          {/* {loggedIn && <NavLink  onClick={handleClick} className={`menu-item`} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>} */}
 
         </Menu>
       </div>
@@ -111,6 +112,7 @@ export default function NavigationBar() {
         <Route path={'/store'}> <Store loggedInUser={loggedInUser} /> </Route>
         <Route path={'/login'}> <Login handleLogin={handleLogin} /> </Route>
         <Route path={'/tips-and-tricks'}><TipsAndTricks /></Route>
+        <Route path={'/password-reset'}><PasswordReset /></Route>
 
 
 

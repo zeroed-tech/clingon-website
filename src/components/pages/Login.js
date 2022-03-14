@@ -8,7 +8,12 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Alert from 'react-bootstrap/Alert'
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    NavLink,
+  } from "react-router-dom";
 import '../../css/general.css'
 
 export default function Login({ handleLogin }) {
@@ -53,7 +58,7 @@ export default function Login({ handleLogin }) {
                         <Form>
 
                             <Form.Group className="mb-3" controlId="formPlaintextEmail">
-                                <Form.Label>Email</Form.Label>
+                                <Form.Label>Username</Form.Label>
                                 <Form.Control onChange={(e) => setUserName(e.target.value)} type="text" placeholder="Username" />
                             </Form.Group>
 
@@ -65,6 +70,7 @@ export default function Login({ handleLogin }) {
                                 e.preventDefault()
                                 handleSubmit()
                             }}>Login</Button>{' '}
+                            <NavLink to='/password-reset'><Button>Password Reset</Button></NavLink>
                         </Form>
 
                     </Col>

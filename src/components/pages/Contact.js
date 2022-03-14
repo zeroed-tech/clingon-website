@@ -21,14 +21,21 @@ export default function Contact() {
         })
     }
     function sendEmail(e) {
-        e.preventDefault();
-
-        emailjs.sendForm('gmail', 'template_g9yehsy', e.target, 'user_XBdJq60qqYe9ChiuSyEGv')
-        .then((result) => {
-            window.location.reload()
-        }, (error) => {
-            console.log(error.text);
-        });
+        fetch("https://clingonaustralia.com.au/contact", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({
+                "name": formObject.name,
+                "email": formObject.email,
+                "message": formObject.message,
+               
+            })
+        })
+            
+            .catch(err => console.log(err))
+        
         
     }
     return (
@@ -41,30 +48,22 @@ export default function Contact() {
 
                         <Form.Group>
                             <Form.Label >Name <span style={{ color: 'red' }}>*</span></Form.Label>
-                            <Form.Control name='name' onChange={(e) => handleChange(e.target.name, e.target.value)} type='' />
+                            <Form.Control name='name' onChange={(e) => handleChange(e.target.name, e.target.value)} type='' required/>
                         </Form.Group>
                         <Form.Group className='mb-3'>
                             <Form.Label>Email <span style={{ color: 'red' }}>*</span></Form.Label>
-                            <Form.Control name='email' onChange={(e) => handleChange(e.target.name, e.target.value)} type='' />
-                        </Form.Group>
-                        <Form.Group className='mb-3'>
-                            <Form.Label>Business Name</Form.Label>
-                            <Form.Control name='businessName' onChange={(e) => handleChange(e.target.name, e.target.value)} type='' />
-                        </Form.Group>
-                        <Form.Group className='mb-3'>
-                            <Form.Label>Website Link</Form.Label>
-                            <Form.Control name='websiteLink' onChange={(e) => handleChange(e.target.name, e.target.value)} type='' />
+                            <Form.Control type='email' name='email' onChange={(e) => handleChange(e.target.name, e.target.value)} required/>
                         </Form.Group>
                         <Form.Group className='mb-3'>
                             <Form.Label>Message <span style={{ color: 'red' }}>*</span></Form.Label>
-                            <Form.Control name='message' onChange={(e) => handleChange(e.target.name, e.target.value)} as='textarea' />
+                            <Form.Control name='message' onChange={(e) => handleChange(e.target.name, e.target.value)} as='textarea' required/>
                         </Form.Group>
                         <Button variant='primary' type='submit'>Submit</Button>
                     </Form>
                     
 
 
-                    <p><b>Note:</b> Please fill out the fields marked with an asterisk.</p>
+                    <p><b>Note:</b> Please fill out all fields.</p>
                     <hr />
                     <Row>
                         <Col className='col-left'>
@@ -73,7 +72,7 @@ export default function Contact() {
                         </Col>
                         <Col className='col-right'>
                             <h4><b>Hayley Justice - Australian Distributor</b></h4>
-                            <address><br />Address: <br />PO Box 213, <br />Wonthaggi Victoria <br />3995<br />Phone: 0439 - 375 - 904<br />Email: clingonaustralia@gmail.com<br />ABN: 44331876608 <br />  </address>
+                            <address><br />Address: <br />PO Box 213, <br />Wonthaggi Victoria <br />3995<br />Phone: 0439 - 376 - 904<br />Email: clingonaustralia@gmail.com<br />ABN: 44331876608 <br />  </address>
                         </Col>
 
                     </Row>

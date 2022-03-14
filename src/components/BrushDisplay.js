@@ -6,8 +6,10 @@ import SideBar from './SideBar'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import bentBrushes from '../Assets/images/BentBrushes2Web.jpg'
 
 export default function BrushDisplay({brush, textAlignment = 'left'}) {
+    console.log(brush.title.props.children)
     return (
         <Container>
             <Row>
@@ -20,11 +22,11 @@ export default function BrushDisplay({brush, textAlignment = 'left'}) {
                     <Row>
                         <Col lg={{span: 6}} className='col-left'>
                             {textAlignment == 'left' && <p className={`${styles.brushWriteUp} ${styles.left}`}>{brush.writeUp}</p>}
-                            {textAlignment == 'right' && <img className={`${styles.brushDisplayImage} pictureFormat`} src={brush.image} />}
+                            {textAlignment == 'right' && <img className={`${styles.brushDisplayImage} pictureFormat`} src={brush.title.props.children == '- BENT BRUSHES -' ? bentBrushes : brush.image} />}
                         </Col>
                         <Col lg={{span: 6}} className='col-left'>
                             {textAlignment == 'right' && <p className={`${styles.brushWriteUp} ${styles.right}`}>{brush.writeUp}</p>}
-                            {textAlignment == 'left' && <img className={`${styles.brushDisplayImage} pictureFormat`} src={brush.image} />}
+                            {textAlignment == 'left' && <img className={`${styles.brushDisplayImage} pictureFormat`} src={brush.title.props.children == '- BENT BRUSHES -' ? bentBrushes : brush.image} />}
 
                         </Col>
                     </Row>

@@ -16,7 +16,7 @@ export default function BecomeRetailer() {
                     <h1>WANT TO BECOME A CLING ON! RETAILER?</h1>
                     <hr />
                     <img className='pictureFormat sizeFix' src={YellowPiano} />
-                    <p >Please send an email to: <a className="email" href="MAILTO:clingonbrushesustralia@gmail.com">clingonbrushesaustralia@gmail.com</a></p>
+                    <p >Please send an email to: <a className="email" href="MAILTO:clingonaustralia@gmail.com">clingonaustralia@gmail.com</a></p>
                     <hr />
                     <img className='pictureFormat sizeFix' src={GreenBrush} />
                 </Col>
