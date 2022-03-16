@@ -24,8 +24,9 @@ import globalStyles from '../Assets/global-styles/bootstrap.min.module.css'
 import cx from 'classnames'
 import general from '../css/general.css'
 import TipsAndTricks from './pages/TipsAndTricks'
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min'
 
-export default function NavigationBar() {
+export default function NavigationBar({isLoggedIn, isLoggedInCallback}) {
   var [open, setOpen] = useState(false)
   var [loggedIn, setLoggedIn] = useState(false)
   var [loggedInUser, setLoggedInUser] = useState(JSON.parse(window.localStorage.getItem('loggedInUser')) || {})
@@ -34,6 +35,8 @@ export default function NavigationBar() {
   }
   var handleLogin = (username) => {
     setLoggedIn(true)
+    window.location.reload(false);
+
     getUserInformation(username)
   }
   var getUserInformation = (username) => {
@@ -53,18 +56,11 @@ export default function NavigationBar() {
       .catch(err => console.error(err))
   }
   var handleLogout = () => {
-    fetch('https://clingonaustralia.com.au/logout', {
-      method: 'GET',
-      header: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(resp => resp.json())
+    fetch('https://clingonaustralia.com.au/logout')
       .then(data => {
-        setLoggedIn(false)
-        console.log("Successfully logged out")
+        window.location.reload(false);
       })
-      .catch(err => console.error(err))
+      .catch(err => console.log(err))
   }
   return (
     <>
@@ -79,9 +75,9 @@ export default function NavigationBar() {
           <NavLink className={styles.menuItem} to='/why-customers-love-cling-on'><b>WHY CLING ON?</b></NavLink>
           <NavLink className={styles.menuItem} to='/contact'><b>CONTACT</b></NavLink>
           <NavLink className={styles.menuItem} to='/tips-and-tricks'><b>TIPS & TRICKS</b></NavLink>
-          {loggedIn && <NavLink className={styles.menuItem} to='/store'><b>STORE</b></NavLink>}
-          {!loggedIn && <NavLink className={styles.menuItem} to='/login'><b>LOGIN</b></NavLink>}
-          {loggedIn && <NavLink  className={styles.menuItem} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
+          {isLoggedIn && <NavLink className={styles.menuItem} to='/store'><b>STORE</b></NavLink>}
+          {!isLoggedIn && <NavLink className={styles.menuItem} to='/login'><b>LOGIN</b></NavLink>}
+          {isLoggedIn && <NavLink  className={styles.menuItem} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>}
           </div>
         </nav>
 
@@ -95,9 +91,9 @@ export default function NavigationBar() {
           <NavLink to='/why-customers-love-cling-on' onClick={handleClick} className={`menu-item`}><b>WHY CLING ON?</b></NavLink>
           <NavLink to='/contact' onClick={handleClick} className={`menu-item`}><b>CONTACT</b></NavLink>
           <NavLink to='/tips-and-tricks' onClick={handleClick} className={`menu-item`}><b>TIPS & TRICKS</b></NavLink>
-          {loggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/store'><b>STORE</b></NavLink>}
-          {!loggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/login'><b>LOGIN</b></NavLink>}
-          {/* {loggedIn && <NavLink  onClick={handleClick} className={`menu-item`} to='/' onClick={() => handleLogout()}><b>LOGOUT</b></NavLink>} */}
+          {isLoggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/store'><b>STORE</b></NavLink>}
+          {!isLoggedIn && <NavLink onClick={handleClick} className={`menu-item`} to='/login'><b>LOGIN</b></NavLink>}
+          {loggedIn && <NavLink  onClick={() => handleLogout()} className={`menu-item`} to='/' ><b>LOGOUT</b></NavLink>}
 
         </Menu>
       </div>
@@ -109,7 +105,7 @@ export default function NavigationBar() {
         <Route path={'/find-a-retailer'}><FindRetailer /></Route>
         <Route path={'/why-customers-love-cling-on'} ><WhyCustomersLoveClingOn /></Route>
         <Route path={'/products'}> <ProductContainer /> </Route>
-        <Route path={'/store'}> <Store loggedInUser={loggedInUser} /> </Route>
+        <Route path={'/store'}> {isLoggedIn ? <Store loggedInUser={loggedInUser} /> : <Redirect to='/' />} </Route>
         <Route path={'/login'}> <Login handleLogin={handleLogin} /> </Route>
         <Route path={'/tips-and-tricks'}><TipsAndTricks /></Route>
         <Route path={'/password-reset'}><PasswordReset /></Route>

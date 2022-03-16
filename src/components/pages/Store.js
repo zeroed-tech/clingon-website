@@ -84,9 +84,9 @@ export default function Store({ loggedInUser }) {
             <Row>
                 <Col lg={{ span: 8 }}>
                     <h3 style={{ width: '84%'}}>Cling On! Wholesale Pricelist 2022 <small style={{fontSize: '15px'}}>Prices include GST</small></h3>
-                    {stockData.map((product) => {
+                    {stockData ? stockData.map((product) => {
                         return <StoreProductDisplay reloadForm={reloadForm} data={product} updateOrderForEmail={updateOrderForEmail} updateOrder={updateOrder} />
-                    })
+                    }) : ""
                     }
                 </Col>
                 <Col lg={{ span: 4 }} style={{ backgroundColor: 'white' }}>

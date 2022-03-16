@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import NavigationBar from './components/NavBar'
 import './css/general.css'
 import {
@@ -7,12 +7,24 @@ import {
 
 
 function App() {
-
+  let [isLoggedIn, setIsLoggedIn] = useState(false)
+  function checkIsLoggedIn() {
+    fetch("https://clingonaustralia.com.au/user")
+    .then(resp => resp.json())
+    .then(data => data ? setIsLoggedIn(true) : setIsLoggedIn(false))
+  }
+  function isLoggedInCallback(loggedIn) {
+      setIsLoggedIn(loggedIn)
+  }
+  
+  useEffect(() => {
+    checkIsLoggedIn()
+  }, []) 
   return (
 
     <div className="App">
         <Router>
-          <NavigationBar />
+          <NavigationBar isLoggedIn={isLoggedIn} isLoggedInCallback={isLoggedInCallback}/>
         </Router>
 
 

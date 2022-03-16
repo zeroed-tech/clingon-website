@@ -6,7 +6,7 @@ import SideBar from '../SideBar'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import insta1 from '../../Assets/images/Inst1.jpg'
+import insta1 from '../../Assets/images/Insta1.jpg'
 import insta2 from '../../Assets/images/Insta2.jpg'
 import insta3 from '../../Assets/images/Insta3.jpg'
 import insta4 from '../../Assets/images/Insta4.jpg'
@@ -36,31 +36,31 @@ export default function FindRetailer() {
                     <hr />
                     <Row>
                         <Col>
-                        <img src={insta1} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta2} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta3} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
+                        <img src={insta1} className='instagramPosts'/>
+                        <img src={insta2} className='instagramPosts'/>
+                        <img src={insta3} className='instagramPosts'/>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                        <img src={insta4} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta5} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta6} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
+                        <img src={insta4} className='instagramPosts'/>
+                        <img src={insta5} className='instagramPosts'/>
+                        <img src={insta6} className='instagramPosts'/>
                         
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                        <img src={insta7} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta8} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta9} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
+                        <img src={insta7} className='instagramPosts'/>
+                        <img src={insta8} className='instagramPosts'/>
+                        <img src={insta9} className='instagramPosts'/>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                        <img src={insta10} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta11} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
-                        <img src={insta12} style={{width: '33.1%', padding: "0.5%", display: 'inline-block', position: 'relative',margin: '0 auto'}}/>
+                        <img src={insta10} className='instagramPosts'/>
+                        <img src={insta11} className='instagramPosts'/>
+                        <img src={insta12} className='instagramPosts'/>
                         </Col>
                     </Row>
                 </Col>

@@ -43,7 +43,7 @@ export default function Login({ handleLogin }) {
             .catch(err => setError(true))
     }
     function successfulLogin() {
-        history.push("/store")
+        history.push("/")
     }
     return (
         <Container>
@@ -70,7 +70,6 @@ export default function Login({ handleLogin }) {
                                 e.preventDefault()
                                 handleSubmit()
                             }}>Login</Button>{' '}
-                            <NavLink to='/password-reset'><Button>Password Reset</Button></NavLink>
                         </Form>
 
                     </Col>
