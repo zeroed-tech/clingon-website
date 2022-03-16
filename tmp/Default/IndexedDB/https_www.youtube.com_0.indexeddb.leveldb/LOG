@@ -1,2 +1,3 @@
-2022/03/06-21:00:38.195 3089d Creating DB /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb since it was missing.
-2022/03/06-21:00:38.229 3089d Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/16-21:37:30.917 250ed Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/16-21:37:30.917 250ed Recovering log #3
+2022/03/16-21:37:30.917 250ed Reusing old log /home/damian/Desktop/Personal/clingon-website/tmp/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 

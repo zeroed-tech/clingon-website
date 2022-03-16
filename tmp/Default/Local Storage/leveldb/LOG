@@ -1,6 +1,18 @@
-2022/03/14-14:01:18.499 3 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/MANIFEST-000001
-2022/03/14-14:01:18.499 3 Recovering log #9
-2022/03/14-14:01:18.500 3 Reusing old log /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/000009.log 
-2022/03/14-14:02:23.411 3 Level-0 table #13: started
-2022/03/14-14:02:23.419 3 Level-0 table #13: 59074 bytes OK
-2022/03/14-14:02:23.424 3 Delete type=0 #9
+2022/03/16-20:30:19.160 3 Reusing MANIFEST /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/MANIFEST-000001
+2022/03/16-20:30:19.161 3 Recovering log #12
+2022/03/16-20:30:19.161 3 Reusing old log /home/damian/Desktop/Personal/clingon-website/tmp/Default/Local Storage/leveldb/000012.log 
+2022/03/16-21:37:35.626 18 Level-0 table #16: started
+2022/03/16-21:37:35.630 18 Level-0 table #16: 44119 bytes OK
+2022/03/16-21:37:35.635 18 Delete type=0 #12
+2022/03/16-21:50:17.633 18 Level-0 table #18: started
+2022/03/16-21:50:17.648 18 Level-0 table #18: 148037 bytes OK
+2022/03/16-21:50:17.653 18 Delete type=0 #15
+2022/03/16-21:50:17.654 18 Compacting 4@0 + 1@1 files
+2022/03/16-21:50:17.665 18 Generated table #19@0: 291 keys, 321777 bytes
+2022/03/16-21:50:17.665 18 Compacted 4@0 + 1@1 files => 321777 bytes
+2022/03/16-21:50:17.669 18 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/03/16-21:50:17.670 18 Delete type=2 #7
+2022/03/16-21:50:17.670 18 Delete type=2 #10
+2022/03/16-21:50:17.670 18 Delete type=2 #18
+2022/03/16-21:50:17.670 18 Delete type=2 #13
+2022/03/16-21:50:17.671 18 Delete type=2 #16
