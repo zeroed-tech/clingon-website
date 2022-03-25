@@ -105,7 +105,7 @@ export default function NavigationBar({isLoggedIn, isLoggedInCallback}) {
         <Route path={'/find-a-retailer'}><FindRetailer /></Route>
         <Route path={'/why-customers-love-cling-on'} ><WhyCustomersLoveClingOn /></Route>
         <Route path={'/products'}> <ProductContainer /> </Route>
-        <Route path={'/store'}> {isLoggedIn ? <Store loggedInUser={loggedInUser} /> : <Redirect to='/' />} </Route>
+        <Route path={'/store'}> {isLoggedIn ? <Store loggedInUser={loggedInUser} /> : <Redirect to='/login' />} </Route>
         <Route path={'/login'}> <Login handleLogin={handleLogin} /> </Route>
         <Route path={'/tips-and-tricks'}><TipsAndTricks /></Route>
         <Route path={'/password-reset'}><PasswordReset /></Route>

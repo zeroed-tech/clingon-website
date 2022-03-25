@@ -43,7 +43,7 @@ export default function Login({ handleLogin }) {
             .catch(err => setError(true))
     }
     function successfulLogin() {
-        history.push("/")
+        history.push("/store")
     }
     return (
         <Container>
